@@ -22,6 +22,8 @@ gem 'jquery-rails', '4.0.4'
 gem 'sass-rails', '5.0.3'
 gem 'turbolinks', '2.5.3'
 gem 'uglifier', '2.7.1'
+gem "figaro"
+
 
 group :development, :test do
   gem 'byebug', '6.0.2'
