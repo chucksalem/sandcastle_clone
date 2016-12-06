@@ -1,8 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'capistrano', '3.4.0'
-gem 'capistrano-bundler', '1.1.4'
-gem 'capistrano-rbenv', '2.0.3'
 gem 'forecast_io', '2.0.0'
 gem 'foreman', '0.78.0'
 gem 'multi_json', '1.11.2'
@@ -38,6 +35,15 @@ group :test do
   gem 'simplecov', '0.10.0'
   gem 'rspec', '3.3.0'
   gem 'rspec-rails', '3.3.3'
+end
+
+group :development do
+  gem 'capistrano-rvm'
+  gem 'capistrano', '3.4.0'
+  gem 'capistrano-bundler', '1.1.4'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rails'
+  gem 'quiet_assets'
 end
 
 group :doc do
