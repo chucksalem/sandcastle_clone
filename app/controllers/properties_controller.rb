@@ -7,14 +7,11 @@ class PropertiesController < ApplicationController
     @end_date   = params[:end_date]
     @guests     = params[:guests]
     @sort       = params[:sort] || 'P'
-
-    if is_search_request
-      search_results
-    else
-      units = UnitRepository.random_units(limit: 10)
-      @units = WillPaginate::Collection.create((params[:page] || 1).to_i, 10, units.count) do |pager|
-        pager.replace(units[pager.offset, pager.per_page].to_a)
-      end
+    search_hash = { area: params[:area], start_date: params[:start_date], end_date: params[:end_date], guests: params[:guests], sort: params[:sort], room: params[:room] }
+    searcher = PropertyRetriever.new search_hash
+    units = searcher.retrieve
+    @units = WillPaginate::Collection.create((params[:page] || 1).to_i, 10, units.count) do |pager|
+      pager.replace(units[pager.offset, pager.per_page].to_a)
     end
   end
 
@@ -36,41 +33,6 @@ class PropertiesController < ApplicationController
   end
 
   private
-
-  def is_search_request
-    [:area, :start_date, :end_date, :guests].all? { |k| params.key?(k) && !params[k].empty? }
-  end
-
-  def search_results
-    start_date = Date.strptime(params[:start_date], DATE_FORMAT)
-    end_date   = Date.strptime(params[:end_date], DATE_FORMAT)
-
-    codes = []
-    OceanoConfig[:cache_population_searches].each do |criteria|
-      criteria[:sort]       = params[:sort] || 'G'
-      criteria[:sort]       = 'G' if criteria[:sort] == '-'
-      criteria[:date_range] = { start: start_date, end: end_date }
-      unless [nil, '', 'all'].include?(params[:guests])
-        criteria[:guests] = [{type: 10, count: params[:guests]}]
-      end
-      codes += UnitRepository.search(criteria)
-    end
-
-    codes = codes.uniq
-
-    unless params[:area] == 'all'
-      in_area_codes = UnitRepository.units_in_area(params[:area])
-      codes = codes & in_area_codes
-    end
-
-    units = codes.map do |c|
-      UnitRepository.get(c)
-    end
-
-    @units = WillPaginate::Collection.create((params[:page] || 1).to_i, 10, units.count) do |pager|
-      pager.replace(units[pager.offset, pager.per_page].to_a)
-    end
-  end
 
   def lookup_rates
     @lookup         = true
