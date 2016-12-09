@@ -1,4 +1,6 @@
 @import
+    "font-awesome",
+    "jquery.bxslider",
     "base/_colors",
     "base/_icon-mixin",
     "base/_scallop-mixin",
@@ -29,7 +31,7 @@
     "layout/_grid",
     "layout/_tile",
     "layout/_widths",
-    "modules/_site-header",
+    "modules/_site-header.scss",
     "modules/_image-grouping",
     "modules/_property-details",
     "modules/_request-booking",
@@ -46,4 +48,5 @@
     "modules/_subnavigation",
     "modules/_featured-properties",
     "modules/_faq",
-    "vendor/jquery.fancybox";
+    "vendor/jquery.fancybox",
+    "modules/_common";

@@ -11,6 +11,23 @@
  * file per style scope.
  *
 
+ *= require font-awesome
+ *= require jquery-ui
  *= require imports
+ *= require jquery.bxslider
+ *= require bootstrap.min
+ *= require homepage-header
+ *= require faq
+ *= require booking-form
+ *= require common-responsive
+ *= require thankyoupage
+ *= require roomdetails
+ *= require newclient
+ *= require hotellisting
+ *= require attractiondetails
+ *= require accommodations
+ *= require hotellists
+
+
 
  */
