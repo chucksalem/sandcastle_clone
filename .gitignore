@@ -33,6 +33,7 @@ bower.json
 
 .env
 tags
+application.yml
 
 dump.rdb
 

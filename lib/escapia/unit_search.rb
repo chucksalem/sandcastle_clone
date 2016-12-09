@@ -41,7 +41,14 @@ module Escapia
           rate_range(xml, criteria)
           rooms(xml, criteria)
           pets(xml, criteria)
+          property_type(xml, criteria)
         end
+      end
+    end
+
+    def property_type(xml, criteria)
+      xml.UnitRef do
+        xml.UnitClassCode(8)
       end
     end
 
