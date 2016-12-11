@@ -1,0 +1,30 @@
+- content_for :hero_title, "Maps".html_safe
+- content_for :hero_size, 'hero-small'
+- content_for :bottom_border, 'bottom-border'
+section.padded-top.padded-bottom.scallop-top.beige-bg
+  .layout-container
+    .gw
+      nav.subnav.g.md-one-third
+        ul
+          li
+            a[href="contact.html"]
+              | Contact Us
+          li
+            a.current[href="maps.html"]
+              | Maps
+          li
+            a[href="faq.html"]
+              | FAQ
+      .subpage-content.g.md-two-thirds
+        h1.heading-small
+          | Maps
+        p
+          | For help getting to and around Rocky Point, here are some maps.
+        h2.heading-medium.top-spacing
+          | Overview
+        a[href="/files/maps/oceano_map_overview.jpg" alt="Standalone overview map"]
+          = image_tag "/files/maps/oceano_map_overview.jpg", :class => "map-image"
+        h2.heading-medium.top-spacing
+          | Details
+        a[href="/files/maps/oceano_map_detail.jpg" alt="Standalone detail map"]
+          = image_tag "/files/maps/oceano_map_detail.jpg", :class => "map-image"

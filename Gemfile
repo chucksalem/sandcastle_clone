@@ -23,7 +23,7 @@ gem 'sass-rails', '5.0.3'
 gem 'turbolinks', '2.5.3'
 gem 'uglifier', '2.7.1'
 gem "figaro"
-gem 'haml-rails'
+gem 'slim-rails'
 
 
 

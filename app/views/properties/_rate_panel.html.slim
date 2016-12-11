@@ -1,0 +1,136 @@
+aside.request-booking.md-one-third
+  - if @lookup && @available
+    header.booking-header
+      h2
+        | $
+        = '%.0f' % @nightly_rate
+        span.term
+          | Per Night
+    = form_tag("/accommodations/#{@id}", {method: 'get', class: 'gw no-gutter booking-details'}) do
+      table
+        tr.date-select
+          td.g.sm-three-eighths
+            label[for="start_date"]
+              | Arrive
+            = text_field_tag "start_date", @start_date, class: 'no-borders datepicker', placeholder: 'mm/dd/yyyy'
+          td.g.sm-three-eighths
+            label[for="end_date"]
+              | Depart
+            = text_field_tag "end_date", @end_date, class: 'no-borders datepicker', placeholder: 'mm/dd/yyyy'
+          td.g.sm-two-eighths
+            label[for="guests"]
+              | Guests
+            .select-style
+              = select_tag "guests", options_for_select(@guest_amount_list, @guests)
+        tr.full-width-container
+          td
+            input.btn.no-min-width[type="submit" value="Search Again"]
+        tr.details.first
+          td.g.two-thirds
+            | $
+            =  '%.0f' % @nightly_rate
+            |  x 
+            = @length_of_stay
+            |  nights
+          td.g.one-third
+            | $
+            = @base_amount
+        tr.details
+          td.g.two-thirds
+            | Tax
+          td.g.one-third
+            | $
+            = @tax_amount
+        - @fees.each do |fee|
+          tr.details
+            td.g.two-thirds
+              = fee.name
+            td.g.one-third
+              | $
+              = '%.2f' % fee.amount
+        tr.details
+          td.g.two-thirds.highlight
+            | Total
+          td.g.one-third.highlight
+            | $
+            = '%.2f' % @total_amount
+        tr.details
+          td.g.two-thirds
+            a[href="/trip-cancellation-insurance" target="_blank"]
+              | Optional Trip Cancellation Insurance
+          td.g.one-third
+            | $
+            = '%.2f' % ((@base_amount.to_f * 1.12) * 0.065)
+        tr.details
+          td.g.two-thirds.highlight
+            | Total w/ Insurance
+          td.g.one-third.highlight
+            | $
+            = '%.2f' % (((@base_amount.to_f * 1.12) * 0.065) + @total_amount.to_f)
+        tr.full-width-container
+          td
+            |  <a href="http://bookings.oceano-rentals.com/Booking/RateDetails/
+            = @booking_id
+            | ?arrive=
+            = @start_date
+            | &depart=
+            = @end_date
+            | &adults=
+            = @guests
+            | " class="btn request-booking-link">Request Booking
+        tr.full-width-container
+          td
+            span.note
+              | The total above is an estimate and includes rent, taxes, and additional fees.
+  - elsif @lookup && !@available
+    header.booking-header
+      h2
+        | Availability and Rate
+    = form_tag("/accommodations/#{@id}", {method: 'get', class: 'gw no-gutter booking-details'}) do
+      table
+        tr.date-select
+          td.g.sm-three-eighths
+            label[for="start_date"]
+              | Arrive
+            = text_field_tag "start_date", @start_date, class: 'no-borders datepicker', placeholder: 'mm/dd/yyyy'
+          td.g.sm-three-eighths
+            label[for="end_date"]
+              | Depart
+            = text_field_tag "end_date", @end_date, class: 'no-borders datepicker', placeholder: 'mm/dd/yyyy'
+          td.g.sm-two-eighths
+            label[for="guests"]
+              | Guests
+            .select-style
+              = select_tag "guests", options_for_select(@guest_amount_list, @guests)
+        tr.full-width-container
+          td.g
+            | This property is unavailable for the chosen dates.
+        tr.full-width-container
+          td
+            input.btn.no-min-width[type="submit" value="Check Availability"]
+  - else
+    header.booking-header
+      h2
+        | Availability and Rate
+    = form_tag("/accommodations/#{@id}", { method: 'get', class: 'gw no-gutter booking-details' }) do
+      table
+        tr.date-select
+          td.g.sm-three-eighths
+            label[for="start_date"]
+              | Arrive
+            = text_field_tag "start_date", @start_date, class: 'no-borders datepicker', placeholder: 'mm/dd/yyyy'
+          td.g.sm-three-eighths
+            label[for="end_date"]
+              | Depart
+            = text_field_tag "end_date", @end_date, class: 'no-borders datepicker', placeholder: 'mm/dd/yyyy'
+          td.g.sm-two-eighths
+            label[for="guests"]
+              | Guests
+            .select-style
+              = select_tag "guests", options_for_select(@guest_amount_list, @guests)
+        tr.full-width-container
+          td.g
+            | Check availablilty to view rates and fees.
+        tr.full-width-container
+          td
+            input.btn.no-min-width[type="submit" value="Check Availability"]

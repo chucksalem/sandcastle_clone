@@ -1,0 +1,319 @@
+- content_for :hero_title, "Reserve".html_safe
+- content_for :lede, "Search for a rental at Rocky Point".html_safe
+section.padded-top.scallop-top.beige-bg
+  .layout-container
+    .property-search
+      form.gw.no-gutter
+        fieldset.g.sm-one-whole.md-five-twelfths
+          label.is-visually-hidden
+            | Rooms
+          .select-style
+            select#select-drop[name="id" value=""]
+              option.drop-options[disabled selected]
+                | Rooms
+              option#HCNDA.drop-options[value="1911-89478"]
+                | Any
+              option#HCNDA.drop-options[value="1911-89478"]
+                | Entire Complex
+              option#HPLCN.drop-options[value="1911-89481"]
+                | El Pelicano
+              option#HSALA.drop-options[value="1911-89483"]
+                | La Sala
+              option#HPLMA.drop-options[value="1911-89482"]
+                | La Paloma
+              option#HCHUP.drop-options[value="1911-89477"]
+                | La Chuparosa
+              option#HCRT1.drop-options[value="1911-89479"]
+                | Courtyard 1
+              option#HCRT2.drop-options[value="1911-89480"]
+                | Courtyard 2
+              option#HAGUI.drop-options[value="1911-112148"]
+                | La Aguila
+        fieldset.g.sm-one-third.md-one-seventh
+          input#start_date.no-borders.datepicker[readonly="readonly" type="text" name="start_date" placeholder="Arrive" autocomplete="off"]
+        fieldset.g.sm-one-third.md-one-seventh
+          input#end_date.no-borders.datepicker[readonly="readonly" type="text" name="end_date" placeholder="Depart" autocomplete="off"]
+        fieldset.g.sm-one-fourth.md-one-eighth.text-align-right
+          label.is-visually-hidden[for="guests"]
+            | Guests
+          .select-style
+            select#guests[name="guests"]
+              option[disabled selected]
+                | Guests
+              option[value="all"]
+                | Any
+              option[value="1"]
+                | 1
+              option[value="2"]
+                | 2
+              option[value="3"]
+                | 3
+              option[value="4"]
+                | 4
+              option[value="5"]
+                | 5
+              option[value="6"]
+                | 6
+              option[value="7"]
+                | 7
+              option[value="8"]
+                | 8
+              option[value="9"]
+                | 9
+              option[value="10"]
+                | 10
+        footer.g.md-two-twelfths
+          input.btn.btn--brown.no-min-width.max-width.search-btn[type="button" value="Search"]
+  .layout-container
+    ul.properties-list.gw.small-gutter
+      li.property.g.sm-one-half.md-one-whole
+        a[href="/accommodations/1911-89478?start_date=&amp;end_date=&amp;guests=all"]
+          img.property-thumb[src="https://pictures.escapia.com/OCEANO/3865690439.jpg"]
+        .details
+          .gw.small-gutter
+            .g.md-three-eighths
+              h2
+                a[href="/accommodations/1911-89478?start_date=&amp;end_date=&amp;guests=all"]
+                  | Hacienda del Mar- Entire Complex
+              p.location
+                | Las Conchas 
+                br
+                | Puerto Peñasco, Mexico
+            .g.md-three-eighths
+              ul.offerings
+                li
+                  i.icon.icon-bath
+                  span.detail
+                    | 7 bath
+                li
+                  i.icon.icon-bed
+                  span.detail
+                    | 7 beds
+                li
+                  i.icon.icon-guests
+                  span.detail
+                    | 15 guests
+            .g.md-two-eighths
+              span.price
+              span.type
+                | house
+      li.property.g.sm-one-half.md-one-whole
+        a[href="/accommodations/1911-112148?start_date=&amp;end_date=&amp;guests="]
+          img.property-thumb[src="https://pictures.escapia.com/OCEANO/6039020158.jpg"]
+        .details
+          .gw.small-gutter
+            .g.md-three-eighths
+              h2
+                a[href="/accommodations/1911-112148?start_date=&amp;end_date=&amp;guests="]
+                  | Hacienda del Mar- Aguila
+              p.location
+                | Las Conchas 
+                br
+                | Puerto Penasco, Mexico
+            .g.md-three-eighths
+              ul.offerings
+                li
+                  i.icon.icon-bath
+                  span.detail
+                    | 1 bath
+                li
+                  i.icon.icon-bed
+                  span.detail
+                    | 1 bed
+                li
+                  i.icon.icon-guests
+                  span.detail
+                    | 2 guests
+            .g.md-two-eighths
+              span.price
+              span.type
+                | apartment
+      li.property.g.sm-one-half.md-one-whole
+        a[href="/accommodations/1911-89479?start_date=&amp;end_date=&amp;guests="]
+          img.property-thumb[src="https://pictures.escapia.com/OCEANO/5665740489.jpg"]
+        .details
+          .gw.small-gutter
+            .g.md-three-eighths
+              h2
+                a[href="/accommodations/1911-89479?start_date=&amp;end_date=&amp;guests="]
+                  | Hacienda del Mar - Courtyard 1
+              p.location
+                | Las Conchas 
+                br
+                | Puerto Peñasco, Mexico
+            .g.md-three-eighths
+              ul.offerings
+                li
+                  i.icon.icon-bath
+                  span.detail
+                    | 1 bath
+                li
+                  i.icon.icon-bed
+                  span.detail
+                    | 1 bed
+                li
+                  i.icon.icon-guests
+                  span.detail
+                    | 2 guests
+            .g.md-two-eighths
+              span.price
+              span.type
+                | apartment
+      li.property.g.sm-one-half.md-one-whole
+        a[href="/accommodations/1911-89482?start_date=&amp;end_date=&amp;guests=all"]
+          img.property-thumb[src="https://pictures.escapia.com/OCEANO/6382770396.jpg"]
+        .details
+          .gw.small-gutter
+            .g.md-three-eighths
+              h2
+                a[href="/accommodations/1911-89482?start_date=&amp;end_date=&amp;guests=all"]
+                  | Hacienda del Mar - La Paloma
+              p.location
+                | Las Conchas 
+                br
+                | Puerto Peñasco, Mexico
+            .g.md-three-eighths
+              ul.offerings
+                li
+                  i.icon.icon-bath
+                  span.detail
+                    | 1 bath
+                li
+                  i.icon.icon-bed
+                  span.detail
+                    | 1 bed
+                li
+                  i.icon.icon-guests
+                  span.detail
+                    | 2 guests
+            .g.md-two-eighths
+              span.price
+              span.type
+                | apartment
+      li.property.g.sm-one-half.md-one-whole
+        a[href="/accommodations/1911-89483?start_date=&amp;end_date=&amp;guests=all"]
+          img.property-thumb[src="https://pictures.escapia.com/OCEANO/1613760763.jpg"]
+        .details
+          .gw.small-gutter
+            .g.md-three-eighths
+              h2
+                a[href="/accommodations/1911-89483?start_date=&amp;end_date=&amp;guests=all"]
+                  | Hacienda del Mar - La Sala
+              p.location
+                | Las Conchas 
+                br
+                | Puerto Peñasco, Mexico
+            .g.md-three-eighths
+              ul.offerings
+                li
+                  i.icon.icon-bath
+                  span.detail
+                    | 1 bath
+                li
+                  i.icon.icon-bed
+                  span.detail
+                    | 1 bed
+                li
+                  i.icon.icon-guests
+                  span.detail
+                    | 2 guests
+            .g.md-two-eighths
+              span.price
+              span.type
+                | apartment
+      li.property.g.sm-one-half.md-one-whole
+        a[href="/accommodations/1911-89480?start_date=&amp;end_date=&amp;guests=all"]
+          img.property-thumb[src="https://pictures.escapia.com/OCEANO/7147550489.jpg"]
+        .details
+          .gw.small-gutter
+            .g.md-three-eighths
+              h2
+                a[href="/accommodations/1911-89480?start_date=&amp;end_date=&amp;guests=all"]
+                  | Hacienda del Mar - Courtyard 2
+              p.location
+                | Las Conchas 
+                br
+                | Puerto Peñasco, Mexico
+            .g.md-three-eighths
+              ul.offerings
+                li
+                  i.icon.icon-bath
+                  span.detail
+                    | 1 bath
+                li
+                  i.icon.icon-bed
+                  span.detail
+                    | 1 bed
+                li
+                  i.icon.icon-guests
+                  span.detail
+                    | 2 guests
+            .g.md-two-eighths
+              span.price
+              span.type
+                | apartment
+      li.property.g.sm-one-half.md-one-whole
+        a[href="/accommodations/1911-89477?start_date=&amp;end_date=&amp;guests=all"]
+          img.property-thumb[src="https://pictures.escapia.com/OCEANO/6630860531.jpg"]
+        .details
+          .gw.small-gutter
+            .g.md-three-eighths
+              h2
+                a[href="/accommodations/1911-89477?start_date=&amp;end_date=&amp;guests=all"]
+                  | Hacienda del Mar - Chuparosa
+              p.location
+                | Las Conchas 
+                br
+                | Puerto Peñasco, Mexico
+            .g.md-three-eighths
+              ul.offerings
+                li
+                  i.icon.icon-bath
+                  span.detail
+                    | 1 bath
+                li
+                  i.icon.icon-bed
+                  span.detail
+                    | 1 bed
+                li
+                  i.icon.icon-guests
+                  span.detail
+                    | 2 guests
+            .g.md-two-eighths
+              span.price
+              span.type
+                | apartment
+      li.property.g.sm-one-half.md-one-whole
+        a[href="/1911-89481?start_date=&amp;end_date=&amp;guests=all"]
+          img.property-thumb[src="https://pictures.escapia.com/OCEANO/8702230763.jpg"]
+        .details
+          .gw.small-gutter
+            .g.md-three-eighths
+              h2
+                a[href="/accommodations/1911-89481?start_date=&amp;end_date=&amp;guests=all"]
+                  | Hacienda del Mar - El Pelicano
+              p.location
+                | Las Conchas 
+                br
+                | Puerto Peñasco, Mexico
+            .g.md-three-eighths
+              ul.offerings
+                li
+                  i.icon.icon-bath
+                  span.detail
+                    | 1 bath
+                li
+                  i.icon.icon-bed
+                  span.detail
+                    | 1 bed
+                li
+                  i.icon.icon-guests
+                  span.detail
+                    | 3 guests
+            .g.md-two-eighths
+              span.price
+              span.type
+                | apartment
+    .pagination.pagination-centered
+      = will_paginate @units, previous_label: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.3 32.6"><polygon points="16.3,32.6 0,16.3 16.3,0"/></svg>',
+      -                                   next_label: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.3 32.6"><polygon points="0,0 16.3,16.3 0,32.6"/></svg>'
