@@ -14,6 +14,9 @@
 //= require jquery-ui
 //= require jquery.validate
 //= require modernizr-ra
+//= require bootstrap
+//= require moment
+//= require bxSlider
 //= require global
 //= require isotope.pkgd.min
 //= require jquery.maskedinput

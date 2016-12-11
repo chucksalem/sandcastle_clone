@@ -9,13 +9,10 @@ Rails.application.config.assets.version = '1.0'
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
-Rails.application.config.assets.precompile += %w( moment.js )
 Rails.application.config.assets.precompile += %w( pikaday.jquery.js )
 Rails.application.config.assets.precompile += %w( pikaday.js )
 Rails.application.config.assets.precompile += %w( jquery.fancybox.pack.js )
 Rails.application.config.assets.precompile += %w( jquery.fancybox-media.js )
-Rails.application.config.assets.precompile += %w( jquery.bxslider.min.js )
-Rails.application.config.assets.precompile += %w( bootstrap.min.js )
 
 %w( home pages properties accommodations hotellists rentals).each do |controller|
   Rails.application.config.assets.precompile += ["#{controller}.js"]

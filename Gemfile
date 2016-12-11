@@ -60,4 +60,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-jquery-ui', '1.12.0'
   gem 'rails-assets-jquery.validate', '1.13.0'
   gem 'rails-assets-modernizr-ra', '2.8.3'
+  gem 'rails-assets-bootstrap', '3.3.6'
+  gem 'rails-assets-moment', '2.10.6'
+  gem 'rails-assets-bxSlider', '4.1.2'
 end

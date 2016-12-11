@@ -14,7 +14,7 @@
  *= require font-awesome
  *= require jquery-ui
  *= require imports
- *= require jquery.bxslider
+ *= require bxSlider
  *= require bootstrap.min
  *= require homepage-header
  *= require faq
@@ -27,7 +27,4 @@
  *= require attractiondetails
  *= require accommodations
  *= require hotellists
-
-
-
  */
