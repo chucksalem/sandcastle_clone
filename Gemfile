@@ -63,4 +63,6 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap', '3.3.6'
   gem 'rails-assets-moment', '2.10.6'
   gem 'rails-assets-bxSlider', '4.1.2'
+  gem 'rails-assets-fancybox', '2.1.5'
+  gem 'rails-assets-pikaday'
 end
