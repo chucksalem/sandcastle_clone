@@ -2,17 +2,17 @@ $ ->
   $('#start_date').on 'change', ->
     $('#end_date-error').css 'display', 'none'
     return
-  $('.search-btn').on 'click', ->
-    $('#search_filter').valid()
-    rooms = $('#select-drop').val()
-    guests = $('#guests').val()
-    start_date = $('#start_date').val()
-    end_date = $('#end_date').val()
-    date_start = if start_date == '' then moment().format('DD-MM-YYYY') else moment(start_date).format('DD-MM-YYYY')
-    date_end = if end_date == '' then moment().add('days', 3).format('DD-MM-YYYY') else moment(end_date).format('DD-MM-YYYY')
-    if start_date != '' and end_date != ''
-      window.location = '/rentals?rooms=' + rooms + '&start_date=' + date_start + '&end_date=' + date_end + '&guests=' + guests
-    return
+  # $('.search-btn').on 'click', ->
+    # $('#search_filter').valid()
+    # rooms = $('#select-drop').val()
+    # guests = $('#guests').val()
+    # start_date = $('#start_date').val()
+    # end_date = $('#end_date').val()
+    # date_start = if start_date == '' then moment().format('DD-MM-YYYY') else moment(start_date).format('DD-MM-YYYY')
+    # date_end = if end_date == '' then moment().add('days', 3).format('DD-MM-YYYY') else moment(end_date).format('DD-MM-YYYY')
+    # if start_date != '' and end_date != ''
+      # window.location = '/rentals?rooms=' + rooms + '&start_date=' + date_start + '&end_date=' + date_end + '&guests=' + guests
+    # return
   $('.view-offer-btn').on 'click', ->
     window.location = '/room_details/' + $(this).val()
     return
