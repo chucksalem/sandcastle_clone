@@ -53,3 +53,11 @@ end
 group :doc do
   gem 'sdoc', '~> 0.4.0'
 end
+
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-jquery', '2.1.4'
+  gem 'rails-assets-jquery-ui', '1.12.0'
+  gem 'rails-assets-jquery.validate', '1.13.0'
+  gem 'rails-assets-modernizr-ra', '2.8.3'
+end

@@ -8,6 +8,5 @@ class HomeController < ApplicationController
     units.each do |unit|
       @random_units << unit if unit['type'] == 'condominium' || unit['type'] == 'townhouse'
     end
-    
   end
 end
