@@ -17,6 +17,20 @@ $ ->
     window.location = '/room_details/' + $(this).val()
     return
   documentWidth = $(window).width()
+  left_arrow_path = $('.arrows').data 'left-arrow'
+  right_arrow_path = $('.arrows').data 'right-arrow'
+  left_blue_arrow_path = $('.arrows').data 'left-blue-arrow'
+  backward_icon_path = $('.arrows').data 'backword-icon'
+  forward_icon_path = $('.arrows').data 'forword-icon'
+
+
+  left_arrow = "<img src='#{left_arrow_path}' height='12' width='24'/>"
+  right_arrow = "<img src='#{right_arrow_path}' height='12' width='24'/>"
+  left_blue_arrow = "<img src='#{left_blue_arrow_path}' height='12' width='24'/>"
+  backward_icon = "<img src='#{backward_icon_path}' height='21' width='40'/>"
+  forward_icon = "<img src='#{forward_icon_path}' height='21' width='40'/>"
+
+
   if documentWidth < 680
     $('.slider5').bxSlider
       slideWidth: 600
@@ -28,8 +42,8 @@ $ ->
       maxSlides: 1
       controls: true
       pager: false
-      nextText: '<img src="assets/right-arrow.png" height="12" width="24"/>'
-      prevText: '<img src="assets/left_blue_arrow.png" height="12" width="24"/>'
+      nextText: right_arrow
+      prevText: left_blue_arrow
   $('.testimonial-slider').bxSlider
     slideWidth: 1100
     minSlides: 1
@@ -37,16 +51,16 @@ $ ->
     slideMargin: 0
     controls: true
     pager: false
-    nextText: '<img src="assets/forword-icon.png" height="21" width="40"/>'
-    prevText: '<img src="assets/backword-icon.png" height="21" width="40"/>'
+    prevText: backward_icon
+    nextText: forward_icon
   $('.featured-attraction-slider').bxSlider
     minSlides: 3
     maxSlides: 3
     slideMargin: 0
     controls: true
     pager: false
-    nextText: '<img src="assets/right-arrow.png" height="12" width="24"/>'
-    prevText: '<img src="assets/Left-arrow.png" height="12" width="24"/>'
+    nextText: right_arrow
+    prevText: left_arrow
   $('.navbar-inverse').css 'margin-top', '21px'
   $('.navbar-toggle').on 'click', ->
     if $(this).hasClass('collapsed')
