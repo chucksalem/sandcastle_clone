@@ -9,7 +9,7 @@
 }
 
 .testimonial-bg-image{
-    background: url("TestimonialImage.jpg") bottom center no-repeat;
+    background: image-url("TestimonialImage.jpg") bottom center no-repeat;
     background-size: cover;
     padding: 0px;
     color: white;
@@ -170,7 +170,7 @@
 }
 
 .footer-bg{
-    background: url("footer-img.png") bottom center no-repeat;
+    background: image-url("footer-img.png") bottom center no-repeat;
     background-size: cover;
     padding: 0px;
     color: white;
@@ -249,7 +249,7 @@
 }
 
 .get-some-deal{
-    background: url("get-some-deals-image.png") bottom center no-repeat;
+    background: image-url("get-some-deals-image.png") bottom center no-repeat;
     background-size: cover;
     padding: 0px;
     height:250px;
@@ -963,7 +963,7 @@ a.accordion-toggle{
 }
 
 .newsletter-subscribe-button{
-    background: url("subscribe-email-btn.png") no-repeat;
+    background: image-url("subscribe-email-btn.png") no-repeat;
     float: left;
     height: 55px;
     width: 160px;

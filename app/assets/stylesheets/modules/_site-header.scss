@@ -24,7 +24,7 @@
         height: 100%;
 
         &:before {
-            background: url('homePageImage.jpg') bottom center no-repeat;
+            background: image-url('homePageImage.jpg') bottom center no-repeat;
             z-index: -1;
             background-size: cover;
             content: "";
