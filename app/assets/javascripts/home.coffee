@@ -13,6 +13,18 @@ $ ->
     # if start_date != '' and end_date != ''
       # window.location = '/rentals?rooms=' + rooms + '&start_date=' + date_start + '&end_date=' + date_end + '&guests=' + guests
     # return
+  startPicker = new Pikaday
+      field: document.getElementById('start_date'),
+      firstDay: 1,
+      minDate: moment().toDate(),
+      format: 'M/D/YYYY'
+
+  endPicker = new Pikaday
+      field: document.getElementById('end_date'),
+      firstDay: 1,
+      minDate: moment().toDate(),
+      format: 'M/D/YYYY'
+
   $('.view-offer-btn').on 'click', ->
     window.location = '/room_details/' + $(this).val()
     return
