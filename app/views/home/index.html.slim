@@ -7,9 +7,9 @@ section.main-content.z-index-1
     .property-search.welcome-text-align-for-smaller
       == render partial: 'properties/search_form', locals: { area: @area, start_date: @start_date, end_date: @end_date, sort: @sort }
 .section-divider.main-content-sectio-devider
-  img src="assets/divider.png" /
+  img src="#{image_path 'divider.png'}"
 .main-heading-div.main-content-sectio-devider-feature
-  img src="assets/featured-rooms-text.png" /
+  img src="#{image_path 'featured-rooms-text.png'}"
 section.featured-rooms-slider-section
   .layout-container.margin-0 style="padding:0px;" 
     .md-one-whole.sm-one-whole.lg-one-whole.left-padding-by-5.slider5
@@ -43,7 +43,7 @@ section.featured-rooms-slider-section
                   = unit['stay_ranges'].first['price']
               br
                 | per night
-            img alt="" height="420" src="#{unit['descriptions']['images'][0]['formats'][2]['url']}" /
+            img alt="" height="420" src="#{unit['descriptions']['images'][0]['formats'][2]['url']}"
             /%img.room-icon-div-img{:src => "assets/image-room-overlay.png"}/
             .room-icon-div style=("opacity: 0.7;") 
               .room_amenity
@@ -67,10 +67,10 @@ section.featured-rooms-slider-section
                     - else
                       | Townhouse
           .md-two-twelfths.sm-two-twelfths.lg-two-twelfths.float-left.last-child-div
-            img alt="" src="assets/st-jude-on-the-little.jpg" /
+            img alt="" src="#{image_path 'st-jude-on-the-little.jpg'}"
 /! testimonial section
 .section-divider
-  img src="assets/divider.png" /
+  img src="#{image_path 'divider.png'}"
 section.testimonial-bg-image
   .testimonial-main-div
     .md-one-whole.sm-one-whole.lg-one-whole.left-padding-by-5.testimonial-slider
@@ -112,28 +112,28 @@ section.testimonial-bg-image
             i.fa.fa-star-half-o
           p.text-align-center.testimonial-comment COURTYARD 1
 .section-divider
-  img src="assets/divider.png" /
+  img src="#{image_path 'divider.png'}"
 .main-heading-div
-  img src="assets/featured-attraction-text.png" /
+  img src="#{image_path 'featured-attraction-text.png'}"
 /! Featured Attractions
 section.padding-bottom-2.padding-top-1
   .feature-atrraction-sliders
     .md-one-whole.sm-one-whole.lg-one-whole.left-padding-by-5.featured-attraction-slider
       .venues
-        img.outfocus-images src="assets/IMG_1900.jpg" /
+        img.outfocus-images src="#{image_path 'IMG_1900.jpg'}"
       .venues
-        img.outfocus-images src="assets/cholla-bay.jpg" /
+        img.outfocus-images src="#{image_path 'cholla-bay.jpg'}"
         .image-caption CHOLLA BAY
       .venues
-        img.outfocus-images src="assets/ecofun-rentals.jpg" /
+        img.outfocus-images src="#{image_path 'ecofun-rentals.jpg'}"
         .image-caption ECOFUN RENTALS
       .venues
-        img.outfocus-images src="assets/playa-bonita.gif" /
+        img.outfocus-images src="#{image_path 'playa-bonita.gif'}"
         .image-caption PLAYA BONITA BEACH
       .venues
-        img.outfocus-images src="assets/street-view.jpg" /
+        img.outfocus-images src="#{image_path 'street-view.jpg'}"
 .section-divider
-  img src="assets/divider.png" /
+  img src="#{image_path 'divider.png'}"
 section.get-some-deal
   .subscribe-email-div
     form.newsletter-subscribe-form action="/subscribe/newsletter" method="post" 
