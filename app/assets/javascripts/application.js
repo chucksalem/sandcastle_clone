@@ -20,6 +20,5 @@
 //= require fancybox/source/jquery.fancybox.pack
 //= require fancybox/source/helpers/jquery.fancybox-media
 //= require pikaday
-//= require global
 //= require isotope.pkgd.min
 //= require jquery.maskedinput
