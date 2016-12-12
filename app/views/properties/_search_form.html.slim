@@ -3,7 +3,7 @@ form#search_filter.gw.no-gutter data-toggle="validator" action="#{accommodations
     .select-style.inner-addon.right-addon
       i.fa.fa-bed aria-hidden="true" 
       select#select-drop name="rooms" required=""
-        = options_for_select([['Rooms', 0],['Any', 'all'],['1', 1],['2', 2],['3', 3],['4', 4],['5', 5],['6', 6],['7', 7],['8', 8],['9', 9],['10', 10]], selected: '')
+        = options_for_select(areas, @area)
     span.text-divider
   fieldset.g.sm-one-third.md-one-seventh.width-15.inner-addon.right-addon
     input#start_date.no-borders.datepicker.arrival-date autocomplete="off" name="start_date" placeholder=("CHECK IN") readonly="readonly" type="text" required="" /
@@ -17,7 +17,7 @@ form#search_filter.gw.no-gutter data-toggle="validator" action="#{accommodations
     label.is-visually-hidden for="guests"  Guests
     .select-style.inner-addon.left-addon
       i.fa.fa-user aria-hidden="true" 
-      select#guests.drop-options name="guests" 
-        = options_for_select([['Guests', 0],['Any', 'all'],['1', 1],['2', 2],['3', 3],['4', 4],['5', 5],['6', 6],['7', 7],['8', 8],['9', 9],['10', 10]], selected: '')
+      select#guests.drop-options name="guests"
+        = options_for_select(guests)
   footer.g.md-two-twelfths
-    input.btn.max-width.search-btn.sandcastle-text-capitalization type="submit" value="Search" /
+    input.btn.max-width.search-btn.sandcastle-text-capitalization type="submit" value="Search"

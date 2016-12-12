@@ -43,8 +43,8 @@ class PropertyRetriever
     end
     codes = codes.uniq
     #SandCastle
-    # in_area_codes = UnitRepository.units_in_area(area)
-    # codes = codes & in_area_codes
+    in_area_codes = UnitRepository.units_in_area(area)
+    codes = codes & in_area_codes
 
     codes = codes.select { |c| c == room } if room && room != 'all'
 
