@@ -20,8 +20,8 @@ $ ->
   left_arrow_path = $('.arrows').data 'left-arrow'
   right_arrow_path = $('.arrows').data 'right-arrow'
   left_blue_arrow_path = $('.arrows').data 'left-blue-arrow'
-  backward_icon_path = $('.arrows').data 'backword-icon'
-  forward_icon_path = $('.arrows').data 'forword-icon'
+  backward_icon_path = $('.arrows').data 'backward-icon'
+  forward_icon_path = $('.arrows').data 'forward-icon'
 
 
   left_arrow = "<img src='#{left_arrow_path}' height='12' width='24'/>"
