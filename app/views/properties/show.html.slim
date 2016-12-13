@@ -44,11 +44,8 @@ section.padded-top.padded-bottom.beige-bg
       .gw
         .g
           - unless @videos.empty? || @videos[0][:formats][:url].empty?
-          -               url = @videos[0][:formats][:url]
-          p
-            | <a class="fancybox-media btn video-tour-btn" title="Video Tour" href="
-            = url
-            | " target="_blank">View a video tour
+            p
+              a.fancybox-media.btn.video-tour-btn title="Video Tour" href="#{@videos[0][:formats][:url]}" target="_blank" View a video tour
       .gw
         .g.md-one-fourth
           h2.heading-two
@@ -59,46 +56,33 @@ section.padded-top.padded-bottom.beige-bg
       hr
       .gw
         .g.md-one-fourth
-          h2.heading-two
-            | Property Details
+          h2.heading-two Property Details
         .g.md-three-fourths
           ul.gw.no-gutter.no-padding
             li.g.md-one-half.padded-right
               p
-                b
-                  | Property Type:
-                = @unit.type.capitalize
+                b Property Type: #{@unit.type.capitalize}
             li.g.md-one-half.padded-right
               p
-                b
-                  | Bedrooms:
-                = @unit.bedrooms
+                b Bedrooms: #{@unit.bedrooms}
             li.g.md-one-half.padded-right
               p
-                b
-                  | Bathrooms:
-                = @unit.bathrooms
+                b Bathrooms: #{@unit.bathrooms}
             li.g.md-one-half.padded-right
               p
-                b
-                  | Floors:
-                = @unit.num_floors
+                b Floors: #{@unit.num_floors}
             li.g.md-one-half.padded-right
               p
-                b
-                  | Occupancy:
-                = @unit.occupancy
+                b Occupancy: #{@unit.occupancy}
       hr
       .gw
         .g.md-one-fourth
-          h2.heading-two
-            | Amenities
+          h2.heading-two Amenities
         .g.md-three-fourths
           ul.gw.no-gutter.no-padding
             - @amenities.each do |amenity|
               li.g.md-one-half.padded-right
-                p
-                  = amenity.to_s.titleize
+                p = amenity.to_s.titleize
 - @unit.reviews.sample(3).compact.tap do |reviews|
   - break if reviews.empty?
   section.padded-top.padded-bottom
@@ -114,10 +98,7 @@ section.padded-top.padded-bottom.beige-bg
                   | “
                   = review[:comment].html_safe
                 - unless review[:city].empty? || review[:state].empty?
-                  span.persons-name
-                    = review[:city]
-                    | , 
-                    = review[:state]
+                  span.persons-name #{review[:city]}, #{review[:state]}
   #map-container
     #map-canvas data-lat="#{@unit.position[:latitude]}" data-lon="#{@unit.position[:longitude]}"
   section.padded-top.padded-bottom.related-places
