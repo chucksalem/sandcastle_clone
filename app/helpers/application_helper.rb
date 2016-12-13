@@ -23,4 +23,16 @@ module ApplicationHelper
   def ellipsis(str, length:)
     str[0..length].gsub(/\s\w+\s*$/,'...')
   end
+
+  def booking_id
+    params[:id].to_str.split('-', 2).last if params[:id]
+  end
+
+  def retrieve_sort
+    params[:sort] || 'P'
+  end
+
+  def generate_property_url unit_code
+    accommodation_url(unit_code) + "?start_date=#{params[:start_date]}&end_date=#{params[:end_date]}&guests=#{params[:guests]}"
+  end
 end

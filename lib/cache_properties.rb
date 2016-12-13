@@ -10,6 +10,7 @@ class CacheProperties
   def perform!
     redis.del(all_units_key)
     units = fetch_all_units(fetch_all_codes)
+    save_all_units(units)
     group_by_area(units)
     prune_groups(units)
   end
@@ -70,6 +71,11 @@ class CacheProperties
     codes.uniq
   end
 
+  def save_all_units units
+    logger.info('Saving all units...')
+    redis.set(all_units_values, units.to_json)
+  end
+
   def all_units_key
     'temp:units:all'
   end
@@ -80,6 +86,10 @@ class CacheProperties
 
   def area_key(slug)
     "areas:#{slug}"
+  end
+
+  def all_units_values
+    'temp:units:values'
   end
 
   def area_key_from_name(name)

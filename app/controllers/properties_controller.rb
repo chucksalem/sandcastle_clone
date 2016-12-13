@@ -2,11 +2,6 @@ class PropertiesController < ApplicationController
   DATE_FORMAT = '%m/%d/%Y'.freeze
 
   def index
-    @area       = params[:area] || '-'
-    @start_date = params[:start_date]
-    @end_date   = params[:end_date]
-    @guests     = params[:guests]
-    @sort       = params[:sort] || 'P'
     search_hash = { area: params[:area], start_date: params[:start_date], end_date: params[:end_date], guests: params[:guests], sort: params[:sort], room: params[:room] }
     searcher = PropertyRetriever.new search_hash
     units = searcher.retrieve
@@ -17,7 +12,6 @@ class PropertiesController < ApplicationController
 
   def show
     @id                = params[:id]
-    @booking_id        = params[:id].to_str.split('-', 2).last
     @unit              = UnitRepository.get(@id)
     @property_title    = @unit.name
     @property_subtitle = @unit.address[:street]
@@ -40,7 +34,7 @@ class PropertiesController < ApplicationController
     start_date      = Date.strptime(@start_date, DATE_FORMAT)
     end_date        = Date.strptime(@end_date, DATE_FORMAT)
     @length_of_stay = end_date.mjd - start_date.mjd
-    @guests         = @guests == "all" ? 1 : @guests
+    @guests         = @guests == Propert::ANY ? 1 : @guests
 
     @rates = Stay.lookup(@id,
                         start_date: start_date,

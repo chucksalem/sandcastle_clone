@@ -1,21 +1,20 @@
-- content_for :hero_title, "Reserve".html_safe
-- content_for :lede, "Search for a rental at Rocky Point".html_safe
+- content_for :hero_title, "Reserve"
+- content_for :lede, "Search for a rental at Rocky Point"
 section.padded-top.scallop-top.beige-bg
   .layout-container
     .property-search
-      = render partial: 'properties/search_form', locals: { area: @area, start_date: @start_date, end_date: @end_date, sort: @sort }
+      = render partial: 'properties/search_form', locals: { area: params[:area], start_date: params[:start_date], end_date: params[:end_date], sort: retrieve_sort }
   .layout-container
     ul.properties-list.gw.small-gutter
       - @units.each do |unit|
         li.property.g.sm-one-half.md-one-whole
-          - full_link = accommodation_url(unit.code) + "?start_date=#{@start_date}&end_date=#{@end_date}&guests=#{@guests}"
-          a href="#{full_link}"
+          a href="#{generate_property_url unit.code}"
             img.property-thumb src="#{unit.standard_images[0][:url]}"
           .details
             .gw.small-gutter
               .g.md-three-eighths
                 h2
-                  a href="#{full_link}" = unit.name
+                  a href="#{generate_property_url unit.code}" = unit.name
                 p.location
                   |#{unit.address.street}
                   br

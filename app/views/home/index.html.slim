@@ -39,10 +39,9 @@ section.featured-rooms-slider-section
               span style=("font-size: 4vmin;font-weight: bold;") 
                 - if !unit[:price].blank?
                   = unit[:price]
-                - else
+                - if !unit['stay_ranges'].blank?
                   = unit['stay_ranges'].first['price']
-              br
-                | per night
+              br per night
             img alt="" height="420" src="#{unit['descriptions']['images'][0]['formats'][2]['url']}"
             /%img.room-icon-div-img{:src => "assets/image-room-overlay.png"}/
             .room-icon-div style=("opacity: 0.7;") 
