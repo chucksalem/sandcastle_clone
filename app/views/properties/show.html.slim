@@ -7,23 +7,16 @@ section.scallop-top
       ul.offerings
         li
           i.icon.icon-bath
-          span.detail
-            = @unit.bathrooms
-            |  Bath
+          span.detail #{@unit.bathrooms} Bath
         li
           i.icon.icon-bed
-          span.detail
-            = @unit.bedrooms
-            |  Beds
+          span.detail #{@unit.bedrooms} Beds
         li
           i.icon.icon-guests
-          span.detail
-            = @unit.occupancy
-            |  Guests
+          span.detail #{@unit.occupancy} Guests
         li
           i.icon.icon-apartment
-          span.detail
-            = @unit.type.capitalize
+          span.detail #{@unit.type.capitalize}
 section.padded-top.padded-bottom.beige-bg
   .layout-container
     = render 'rate_panel'
@@ -32,59 +25,22 @@ section.padded-top.padded-bottom.beige-bg
         .row
           - if @large_images.count > 0
             article.one-whole.md-two-thirds.tile
-              |  <a rel="image-gallery" href="
-              = @large_images[0][:url]
-              | " title="
-              = @large_images[0][:title]
-              | " class="fancybox contain" style="background-image: url('
-              = @standard_images[0][:url]
-              | ');">
-            - - end
-            - if @large_images.count > 1
-              article.one-whole.md-one-third.tile
-                |  <a rel="image-gallery" href="
-                = @large_images[1][:url]
-                | " title="
-                = @large_images[1][:title]
-                | " class="fancybox contain" style="background-image: url('
-                = @standard_images[1][:url]
-                | ');">
-              - - end
+              a.fancybox.contain rel="image-gallery" href="#{@large_images[0][:url]}" title="#{@large_images[0][:title]}" style="background-image: url('#{@standard_images[0][:url]}');"
+          - if @large_images.count > 1
+              a.fancybox.contain rel="image-gallery" href="#{@large_images[1][:url]}" title="#{@large_images[1][:title]}" style="background-image: url('#{@standard_images[1][:url]}');"
         .row
           - if @large_images.count > 2
             article.one-whole.md-one-third.tile
-              |  <a rel="image-gallery" href="
-              = @large_images[2][:url]
-              | " title="
-              = @large_images[2][:title]
-              | " class="fancybox contain" style="background-image: url('
-              = @standard_images[2][:url]
-              | ');">
-            - - end
-            - if @large_images.count > 3
-              article.one-whole.md-one-third.tile
-                |  <a rel="image-gallery" href="
-                = @large_images[3][:url]
-                | " title="
-                = @large_images[3][:title]
-                | " class="fancybox contain" style="background-image: url('
-                = @standard_images[3][:url]
-                | ');">
-              - - end
-              - for i in 5..@standard_images.count do
-                |  <a rel="image-gallery" href="
-                = @large_images[i-1][:url]
-                | " title="
-                = @large_images[i-1][:title]
-                | " class="fancybox hidden">
-              article.one-whole.md-one-third.tile
-                a.contain.black.placehold-all-images.open-lightbox[href="#"]
-
-                .over
-                  h2
-                    | See All 
-                    = @standard_images.count
-                    |  Photos
+              a.fancybox.contain rel="image-gallery" href="#{@large_images[2][:url]}" title="#{@large_images[2][:title]}" style="background-image: url('#{@standard_images[2][:url]}');"
+          - if @large_images.count > 3
+            article.one-whole.md-one-third.tile
+              a.fancybox.contain rel="image-gallery" href="#{@large_images[3][:url]}" title="#{@large_images[3][:title]}" style="background-image: url('#{@standard_images[3][:url]}');"
+          - (5..@standard_images.count).each do |index|
+              a.fancybox.hidden rel="image-gallery" href="#{@large_images[index - 1][:url]}" title="#{@large_images[index - 1][:title]}" style="background-image: url('#{@standard_images[index -1][:url]}');"
+          article.one-whole.md-one-third.tile
+            a.contain.black.placehold-all-images.open-lightbox href="#"
+              .over
+                h2 See All #{@standard_images.count} Photos
       .gw
         .g
           - unless @videos.empty? || @videos[0][:formats][:url].empty?
@@ -144,7 +100,7 @@ section.padded-top.padded-bottom.beige-bg
                 p
                   = amenity.to_s.titleize
 - @unit.reviews.sample(3).compact.tap do |reviews|
-  - - break if reviews.empty?
+  - break if reviews.empty?
   section.padded-top.padded-bottom
     .layout-container
       .md-two-thirds
@@ -162,30 +118,16 @@ section.padded-top.padded-bottom.beige-bg
                     = review[:city]
                     | , 
                     = review[:state]
-            - - end
-  - - end
   #map-container
-    - @map_latitude = @unit.position[:latitude]
-    -     @map_longitude = @unit.position[:longitude]
-    |  <div id="map-canvas" data-lat="
-    = @map_latitude
-    | " data-lon="
-    = @map_longitude
-    | ">
+    #map-canvas data-lat="#{@unit.position[:latitude]}" data-lon="#{@unit.position[:longitude]}"
   section.padded-top.padded-bottom.related-places
     .layout-container
-      h2.heading-two.bottom-spacing-large
-        | Other Places
+      h2.heading-two.bottom-spacing-large Other Places
       ul.gw.large-gutter.no-padding
         - @random_units.each do |unit|
           li.g.md-one-third
-            |  <a href="
-            = accommodation_url(unit.code)
-            | "> <img src="
-            = unit.standard_images[0][:url]
-            | "> 
-            h2.top-spacing
-              = unit.name
+            a href="#{accommodation_url(unit.code)}"
+              img src="#{unit.standard_images[0][:url]}"
+            h2.top-spacing = unit.name
             p
               = ellipsis(unit.long_description, length: 50)
-          - - end
