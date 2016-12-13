@@ -22,3 +22,4 @@
 //= require pikaday
 //= require isotope.pkgd.min
 //= require jquery.maskedinput
+//= require base
