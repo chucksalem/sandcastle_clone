@@ -95,8 +95,7 @@ section.padded-top.padded-bottom.beige-bg
             li.g.sm-one-whole
               blockquote
                 p.persons-words
-                  | “
-                  = review[:comment].html_safe
+                  | “ #{review[:comment].html_safe}
                 - unless review[:city].empty? || review[:state].empty?
                   span.persons-name #{review[:city]}, #{review[:state]}
   #map-container

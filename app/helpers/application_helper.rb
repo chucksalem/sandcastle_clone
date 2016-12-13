@@ -3,12 +3,12 @@ module ApplicationHelper
     items = OceanoConfig[:areas].map do |item|
        [ item, item.tr(' ', '').underscore ]
     end
-    [['Where are you going?', '-', {disabled: 'disabled', selected: ''}], ['Any', 'all']] + items
+    [['Where are you going?', '-', {disabled: 'disabled', selected: ''}], ['Any', PropertyRetriever::ANY]] + items
   end
 
   def guests
     items = (1..10).map { |item| [item, item] }
-    [['Guests', 0, {disabled: 'disabled', selected: ''}],['Any', 'all']] + items
+    [['Guests', 0, {disabled: 'disabled', selected: ''}],['Any', PropertyRetriever::ANY]] + items
   end
 
   def sort_by

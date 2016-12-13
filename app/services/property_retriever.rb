@@ -1,5 +1,6 @@
 class PropertyRetriever
   DATE_FORMAT = '%m/%d/%Y'.freeze
+  ANY = 'any'
 
   attr_accessor :criteria
   def initialize criteria
@@ -30,8 +31,9 @@ class PropertyRetriever
     end_date   = Date.strptime(criteria[:end_date], DATE_FORMAT)
     sort = 'G'
     sort = criteria[:sort] if criteria[:sort] && criteria[:sort] != '-'
-    guests = [{type: 10, count: criteria[:guests]}] unless [nil, '', 'all'].include?(criteria[:guests])
-    area = 'all'
+    guests = [{type: 10, count: criteria[:guests]}] unless criteria[:guests].blank? && criteria[:guests] != ANY
+    
+    area = ANY
     area = criteria[:area] unless criteria[:area].blank?
     room = criteria[:room] unless criteria[:room].blank?
     search_hash = { sort: sort, date_range: { start: start_date, end: end_date }, guests: guests }
@@ -46,8 +48,7 @@ class PropertyRetriever
     # in_area_codes = UnitRepository.units_in_area(area)
     # codes = codes & in_area_codes
 
-    codes = codes.select { |c| c == room } if room && room != 'all'
-
+    codes = codes.select { |c| c == room } if room && room != ANY
     units = codes.map { |c| UnitRepository.get c }
 
     #SandCastle
