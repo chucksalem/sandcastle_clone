@@ -46,6 +46,7 @@ group :development do
   gem 'capistrano3-puma'
   gem 'capistrano-rails'
   gem 'quiet_assets'
+  gem "letter_opener"
 end
 
 group :doc do

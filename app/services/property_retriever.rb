@@ -32,7 +32,7 @@ class PropertyRetriever
     sort = 'G'
     sort = criteria[:sort] if criteria[:sort] && criteria[:sort] != '-'
     guests = [{type: 10, count: criteria[:guests]}] unless criteria[:guests].blank? && criteria[:guests] != ANY
-    
+
     area = ANY
     area = criteria[:area] unless criteria[:area].blank?
     room = criteria[:room] unless criteria[:room].blank?

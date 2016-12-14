@@ -26,6 +26,11 @@ class PropertiesController < ApplicationController
     get_images
   end
 
+  def subscribe
+    AppMailer.subscribe(params[:subscribe][:email]).deliver_now
+    redirect_to root_path
+  end
+
   private
 
   def lookup_rates

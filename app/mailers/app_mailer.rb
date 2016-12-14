@@ -1,4 +1,4 @@
-class ContactMailer < ActionMailer::Base
+class AppMailer < ActionMailer::Base
   default from: 'info@gooceano.com'
   default to: 'info@gooceano.com'
 
@@ -19,5 +19,10 @@ class ContactMailer < ActionMailer::Base
     @message    = message
 
     mail(subject: 'Work Order Form')
+  end
+
+  def subscribe email
+    @email      = email
+    mail(subject: 'Subscription')
   end
 end

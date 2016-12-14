@@ -8,7 +8,7 @@ class PagesController < ApplicationController
   end
 
   def contact_thank_you
-    ContactMailer.contact(
+    AppMailer.contact(
       email:      params[:email],
       first_name: params[:firstname],
       last_name:  params[:lastname],
@@ -18,7 +18,7 @@ class PagesController < ApplicationController
   end
 
   def owners_thank_you
-    ContactMailer.work_order(
+    AppMailer.work_order(
       email:      params[:email],
       first_name: params[:firstname],
       last_name:  params[:lastname],

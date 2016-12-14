@@ -135,11 +135,4 @@ section.padding-bottom-2.padding-top-1
   img src="#{image_path 'divider.png'}"
 section.get-some-deal
   .subscribe-email-div
-    form.newsletter-subscribe-form action="/subscribe/newsletter" method="post" 
-      = tag(:input, type: "hidden", name: request_forgery_protection_token.to_s, value: form_authenticity_token)
-      input name="message" type="hidden" value=("You are subscribed to our Newsletter") /
-      input.email.email-address-text-box autocomplete="off" name="emailId" placeholder=("YOUR EMAIL ADDRESS") type="text" /
-      .subscriber-button-main
-        input.newsletter-subscribe-button type="submit" /
-      p.error.invalid-email Please enter a valid email address.
-
+    = render partial: 'shared/subscription'
