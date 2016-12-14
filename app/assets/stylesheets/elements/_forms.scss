@@ -40,11 +40,6 @@ form {
         border-radius: 3px;
         -webkit-appearance: none;
         width: 100%;
-        padding: .75em;
-        border: 1px solid $gray;
-        color: rgba($black, .7);
-        font-size: 1.6em;
-        resize: none;
 
         .wf-loading & {
           visibility: hidden;
