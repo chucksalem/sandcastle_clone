@@ -20,7 +20,6 @@
 
     .text-divider{
         height: 40px;
-        padding-right: 2%;
         display: inline-block;
         border-left: 1px solid #ffffff;
         @include bp-until($breakpoint__lg){
@@ -43,7 +42,8 @@
       font-size: 16px;
       font-family: "Montserrat";
       width: 47%;
-      margin-left: 38%;
+      margin-left: 27%;
+      text-align: center;
       @include bp-between($breakpoint__xs, $breakpoint__lg){
         margin: 0 auto;
         width: 120px;
@@ -64,6 +64,7 @@
   .footer-menu-list {
     width: 400px !important;
     margin: 0 auto;
+    text-align: center;
     span {
       padding-left: 10px;
     }
