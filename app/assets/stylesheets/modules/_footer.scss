@@ -1,0 +1,72 @@
+.footer-bg{
+    background: image-url("footer-img.png") bottom center no-repeat;
+    background-size: cover;
+    color: white;
+    @include clearfix();
+
+  .footer-main-div{
+      height: 190px;
+      width: 100%;
+      position: relative;
+      @include clearfix();
+
+    .footer-logo {
+      position: absolute;
+      height: 100px;
+      left: 30px;
+      top: 50%;
+      margin-top: -50px;
+    }
+
+    .text-divider{
+        height: 40px;
+        padding-right: 2%;
+        display: inline-block;
+        border-left: 1px solid #ffffff;
+        @include bp-until($breakpoint__lg){
+          display: none;
+        }
+    }
+
+    .list-div-text{
+      height: 40px;
+      display: inline-block;
+      vertical-align: middle;
+
+      @include bp-between($breakpoint__xs, $breakpoint__lg){
+        display: block;
+      }
+    }
+
+    .menu-list-div{
+      padding: 70px 0 0 0;
+      font-size: 16px;
+      font-family: "Montserrat";
+      width: 47%;
+      margin-left: 38%;
+      @include bp-between($breakpoint__xs, $breakpoint__lg){
+        margin: 0 auto;
+        width: 120px;
+      }
+    }
+
+    .footer-menu-icon-div{
+      position: absolute;
+      height: 50px;
+      width: 125px;
+      right: 10px;
+      top: 50%;
+      margin-top: -25px;
+      font-size: 20px;
+    }
+  }
+
+  .footer-menu-list {
+    width: 400px !important;
+    margin: 0 auto;
+    span {
+      padding-left: 10px;
+    }
+  }
+}
+

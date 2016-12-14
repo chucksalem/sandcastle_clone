@@ -25,8 +25,6 @@ gem 'uglifier', '2.7.1'
 gem "figaro"
 gem 'slim-rails'
 
-
-
 group :development, :test do
   gem 'byebug', '6.0.2'
   gem 'dotenv-rails', '0.7.0'
