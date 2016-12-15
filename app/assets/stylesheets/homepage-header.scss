@@ -398,19 +398,6 @@
     top: -1px;
 }
 
-.room-icon-div{
-    float: left;
-    position: absolute;
-    width: 41.7%;
-    font-size: 20px;
-    height: 100px;
-    display: table-cell;
-    text-align: center;
-    color: white;
-    background: rgba(255,255,255,0.5);
-    bottom: 0px;
-}
-
 .featured-rooms-slider-section .bx-wrapper .bx-controls-direction a{
     top: 89%;
      margin-top: 0px;
@@ -490,12 +477,6 @@ section.main-content{
 
 .featured-rooms-slider-section .md-one-whole.sm-one-whole .last-child-div img{
     height: 420px;
-}
-
-.room-icon-div-img{
-    position: absolute;
-    bottom: 0;
-    width: 41.7%;
 }
 
 .site-header .main-navigation{
@@ -1286,26 +1267,6 @@ section.main-content.email-thank-you-section{
 
 }
 
-.room-icon-div{
-    opacity: 0.7;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.room-icon-div .room_amenity{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.room-icon-div .room_bath, .room-icon-div .room_bed, .room-icon-div .room_users, .room-icon-div .room_building{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 25px;
-}
 
 @media screen and (max-width: 959px) and (min-width: 850px) {
     section.main-content .layout-container {

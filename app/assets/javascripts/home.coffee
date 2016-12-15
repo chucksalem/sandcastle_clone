@@ -14,9 +14,6 @@ $ ->
       # window.location = '/rentals?rooms=' + rooms + '&start_date=' + date_start + '&end_date=' + date_end + '&guests=' + guests
     # return
 
-  $('.view-offer-btn').on 'click', ->
-    window.location = '/room_details/' + $(this).val()
-    return
   documentWidth = $(window).width()
   left_arrow_path = $('.arrows').data 'left-arrow'
   right_arrow_path = $('.arrows').data 'right-arrow'
