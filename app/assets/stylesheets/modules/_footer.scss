@@ -16,6 +16,9 @@
       left: 30px;
       top: 50%;
       margin-top: -50px;
+      @include bp-until($breakpoint__md) {
+        display: none;
+      }
     }
 
     .text-divider{
