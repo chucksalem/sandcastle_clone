@@ -6,6 +6,12 @@
     display: inline-block;
     width: 20%;
 
+    @include bp-until($breakpoint__md) {
+      display: block;
+      margin: 10px 0px;
+      width: 100% !important;
+    }
+
     select, input {
       font-family: "brandon-grotesque", sans-serif;
       font-weight: 500;
