@@ -23,7 +23,7 @@ gem 'sass-rails', '5.0.3'
 gem 'turbolinks', '2.5.3'
 gem 'uglifier', '2.7.1'
 gem "figaro"
-
+gem 'slim-rails'
 
 group :development, :test do
   gem 'byebug', '6.0.2'
@@ -46,8 +46,22 @@ group :development do
   gem 'capistrano3-puma'
   gem 'capistrano-rails'
   gem 'quiet_assets'
+  gem "letter_opener"
 end
 
 group :doc do
   gem 'sdoc', '~> 0.4.0'
+end
+
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-jquery', '2.1.4'
+  gem 'rails-assets-jquery-ui', '1.12.0'
+  gem 'rails-assets-jquery.validate', '1.13.0'
+  gem 'rails-assets-modernizr-ra', '2.8.3'
+  gem 'rails-assets-bootstrap', '3.3.6'
+  gem 'rails-assets-moment', '2.10.6'
+  gem 'rails-assets-bxSlider', '4.1.2'
+  gem 'rails-assets-fancybox', '2.1.5'
+  gem 'rails-assets-pikaday'
 end

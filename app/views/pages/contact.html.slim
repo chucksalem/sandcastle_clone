@@ -1,0 +1,137 @@
+- content_for :hero_title, "Contact Us".html_safe
+- content_for :hero_size, 'hero-small'
+- content_for :bottom_border, 'bottom-border'
+section.padded-top.padded-bottom.beige-bg
+  .layout-container
+    .gw
+      nav.subnav.g.md-one-third
+        ul
+          li
+            a.current[href="contact.html"]
+              | Contact Us
+          li
+            a[href="maps.html"]
+              | Maps
+          li
+            a[href="faq.html"]
+              | FAQ
+      .subpage-content.g.md-two-thirds
+        h1.heading-small
+          | Contact Us
+        p
+          | For more information, please fill out the following form, or contact us with any of the methods below this form. Please make sure that your e-mail address is correct so that we may reply.
+        h2.heading-medium.top-spacing
+          | Contact Information
+        form[method="post" action="/contact/thank-you"]
+          = tag(:input, type: "hidden", name: request_forgery_protection_token.to_s, value: form_authenticity_token)
+          fieldset.half
+            label
+              | First Name
+              span.important
+                | *
+            input[type="text" name="firstname" required]
+          fieldset.half.right
+            label
+              | Last Name
+              span.important
+                | *
+            input[type="text" name="lastname" required]
+          fieldset.half
+            label
+              | Email Address
+              span.important
+                | *
+            input[type="email" name="email" required]
+          fieldset.half.right
+            label
+              | Phone Number
+            input[type="tel" name="phone"]
+          fieldset
+            label
+              | Special requests or questions?
+              span.important
+                | *
+            textarea.special-requests[required]
+          footer.form__actions
+            article.two-fifths
+              p.important
+                | * denotes a required field
+            article.field.two-fiths
+              input#submit.field__input.btn.submit[type="submit" value="Submit Form"]
+              span.field__feedback
+              span.field__hint
+        hr.dark
+        h2.heading-medium
+          | Contact by Email
+        .gw
+          .g.sm-one-half
+            p.sans
+              span.label
+                b
+                  | Email Address
+              br
+              a.dark[href="mailto:info@gooceano.com"]
+                | info@gooceano.com
+        hr.dark
+        h2.heading-medium
+          | Contact by phone
+        .gw
+          .g.sm-one-half
+            p.sans
+              span.label
+                b
+                  | Reservation line (toll free from U.S.)
+              br
+              a.dark.telephone[href="tel:18883288491"]
+                | (888) 328-8491
+          .g.sm-one-half
+            p.sans
+              span.label
+                b
+                  | Fax from U.S.
+              br
+              a.dark.telephone[href="tel:16023912799"]
+                | (602) 391-2799
+          .g.sm-one-half
+            p.sans
+              span.label
+                b
+                  | Telephone from Mexico
+              br
+              a.dark.telephone[href="tel:016383830800"]
+                | 01 (638) 383-0800
+          .g.sm-one-half
+            p.sans
+              span.label
+                b
+                  | Fax from Mexico
+              br
+              a.dark.telephone[href="tel:016383830801"]
+                | 01 (638) 383-0801
+        hr.dark
+        h2.heading-medium
+          | Address
+        .gw
+          .g.sm-one-half
+            p.sans
+              span.label
+                b
+                  | Océano Rentals
+              br
+              span
+                | P.O. Box 2357
+              br
+              span
+                | Litchfield Park, AZ 85340
+          .g.sm-one-half
+            p.sans
+              span.label
+                b
+                  | Océano Rentals
+              br
+              span
+                | 22 Fremont Bulevar
+              br
+              span
+                | Puerto Peñasco, Sonora, México 83550
+= image_tag "contact-map.jpg", :class => "contact-map"

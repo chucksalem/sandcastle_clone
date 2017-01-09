@@ -1,0 +1,1635 @@
+.testimonial-bg-image{
+    background: image-url("TestimonialImage.jpg") bottom center no-repeat;
+    background-size: cover;
+    padding: 0px;
+    color: white;
+    content: '';
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    width: 100%;
+}
+
+
+
+.testimonial-bg-image .bx-viewport{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+    margin: 0px;
+    border: none;
+    box-shadow: none;
+}
+
+.testimonial-bg-image .bx-wrapper{
+    margin: 0 auto;
+}
+
+.center-image-align{
+    margin: 0 auto;
+}
+
+.testimonial-user-rating{
+    color:#fbd839;
+    font-size:20px;
+    text-align: center;
+}
+
+.testimonial-comment{
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 10%;
+}
+
+.testimonial-user-name{
+    font-family: "Montserrat";
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.call-now-bg{
+    background-color: #fbd839;
+    padding: 2.5% 15%;
+    text-align: left;
+    height: 103px;
+    text-transform: uppercase;
+}
+
+.hot-offer{
+    font-size: 15px;
+    color: #38bcfa;
+    padding-top:20px;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+.room-name-text{
+    font-family: "Montserrat";
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.offer-btn {
+    color: white;
+    background-color: #38bcfa;
+    width: 30%;
+}
+
+.price-btn {
+    color: white;
+    background-color: #38bcfa;
+    width: 30%;
+}
+
+.homepage-main-bar{
+    border-bottom: 1px solid white;
+    float: left;
+    color: white;
+    width: 100%;
+    font-size: 12px;
+    padding: 5px 4%;
+    font-weight: 600;
+}
+
+.icons-div{
+    float: left;
+    /*width: 10%;*/
+}
+
+.margin-right-10{
+    margin-right: 10%;
+}
+
+.login-register-div{
+    float: right;
+    font-size: 12px;
+    color: white;
+    font-family: "Montserrat";
+}
+
+.main-search-div{
+    float: left;
+    width: 76%;
+    font-family: "Montserrat";
+    font-size: 1.4em;
+    font-weight: 300;
+    color: #bababa;
+    background: white;
+    border-top-left-radius: 8px;
+    height: 70px;
+    border-bottom-left-radius: 8px;
+    /*padding: 2.5%;*/
+}
+
+.main-search-div fieldset{
+    float: left;
+    height: auto;
+    font-size: 15px;
+    padding: 21px 0px;
+}
+
+.width-25{
+    width:25%;
+}
+
+.width-30{
+    width: 30%;
+}
+
+.width-15{
+    width: 15%;
+}
+
+.width-10{
+    width: 10%;
+}
+
+.main-search-div fieldset .fa{
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.btn-bg-color{
+    background: #39bdfb;
+}
+
+.font-22-px{
+    font-size: 1.8em !important;
+}
+
+.list-div{
+    float: left;
+    padding: 0% 15%;
+    width: 80%;
+}
+
+.padding-right-5{
+ padding-right: 5%;
+}
+
+.footer-menu-icon-div .fa{
+    padding: 7%;
+    padding-right: 13%;
+}
+
+.footer-bg .homepage-main-bar{
+    padding: 0px;
+}
+
+.get-some-deal{
+    background: image-url("get-some-deals-image.png") bottom center no-repeat;
+    background-size: cover;
+    padding: 0px;
+    height:250px;
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
+    content: '';
+}
+
+/*Featured Attractions */
+
+.venues {
+    margin-left: 10px;
+    width: 270px !important;
+}
+
+.infocus-images {
+    height: 250px;
+}
+
+.outfocus-images {
+    height: 283px;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.image-caption {
+    top: -35px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+.feedback {
+    float: left;
+    width: 100%;
+    height: 33px;
+    background: #f7f7f7;
+    margin-top: -31px;
+}
+
+.likes, .comments {
+    float: left;
+    width: 50%;
+    height: 33px;
+    text-align: center;
+    border: 1px solid rgb(186, 186, 186);
+    padding: 2px;
+}
+
+.comments {
+    border-left: none;
+}
+
+.fa-heart {
+    color: deepskyblue;
+    font-size: 16px !important;
+    margin-right: 10px;
+    padding-top: 9px;
+}
+
+.fa-comment {
+    color: yellow;
+    font-size: 16px !important;
+    margin-right: 10px;
+    padding-top: 9px;
+}
+
+.number {
+    font-weight: normal;
+    font-size: 16px;
+    font-family: "Montserrat";
+}
+
+/*home page css*/
+.center-heading{
+    /*margin-left: 32% !important;*/
+    /*margin-right: 20% !important;*/
+}
+
+/* Find Gateway header */
+.site-header .heading-large.margin-top-by-5{
+    font-size: 48px;
+    font-family: "Montserrat";
+}
+
+.main-search-div .text-divider{
+    height: 30px;
+    float: right;
+    padding-right: 2%;
+    border-left: 2px solid #bababa;
+}
+
+.main-search-div fieldset span:first-child{
+    line-height: 32px;
+}
+
+.email-address-text-box{
+    height: 53px;
+    border-radius: 10px;
+    border: none;
+    color: #bababa;
+    width: 46%;
+    float: left;
+    margin-right: 5%;
+    font-weight: 200;
+    padding: 20px;
+    font-family: "Montserrat";
+    font-size: 16px;
+}
+
+.subscribe-email-div{
+    float: left;
+    width: 100%;
+    padding: 7% 0 0 47%; /*padding: 7% 0% 7% 47%;*/
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #adadad;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #adadad;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #adadad;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #adadad;
+}
+
+.section-divider{
+    width: 100%;
+    height: 70px;
+    background: white;
+    text-align: -moz-center;
+}
+
+.section-divider img{
+    display: table-cell;
+    margin: 0px auto;
+    padding: 35px 0px;
+}
+
+.main-heading-div{
+    background: white;
+    height: 100px;
+    text-align: -moz-center;
+}
+
+.main-heading-div img{
+    display: table-cell;
+    margin: 0 auto;
+}
+
+.featured-rooms-slider-section .bx-wrapper{
+    margin: 0 auto;
+}
+
+.testimonial-main-div .bx-wrapper .bx-next, .testimonial-main-div .bx-wrapper .bx-prev{
+    background: none;
+}
+
+.testimonial-main-div .bx-wrapper .bx-next img, .testimonial-main-div .bx-wrapper .bx-prev img{
+    width: 21px ;
+    height: 40px ;
+}
+
+.testimonial-main-div{
+    padding: 60px 0;
+}
+
+.testimonial-main-div .center-image-align{
+    margin-bottom: 2em;
+}
+
+.call-now-text{
+    font-size: 2em;
+    color: #fff;
+    font-family: "Montserrat";
+}
+
+.phone-number-text{
+    font-size: 33px;
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: normal;
+}
+
+.room-details{
+    font-family: "Montserrat";
+    font-size: 10px;
+    color: #a7a7a7;
+}
+
+.rating-icon-div{
+    color: #ffcc33;
+    font-size: 20px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+}
+
+.room-details-main-div{
+    padding-right: 5%;
+    padding-left: 15%;
+    text-align: left;
+    background: #f7f7f7;
+    height: 317px;
+}
+
+.offer-rate{
+    position: absolute;
+    top: -1px;
+}
+
+.featured-rooms-slider-section .bx-wrapper .bx-controls-direction a{
+    top: 89%;
+     margin-top: 0px;
+}
+
+.featured-rooms-slider-section .bx-wrapper .bx-next, .featured-rooms-slider-section .bx-wrapper .bx-prev{
+    background: none;
+}
+
+.feature-atrraction-sliders .bx-wrapper .bx-next, .feature-atrraction-sliders .bx-wrapper .bx-prev{
+    background: none;
+}
+
+.feature-atrraction-sliders .bx-wrapper .bx-controls-direction a{
+    top: 80%;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+
+.padding-bottom-2{
+    padding-bottom: 2%;
+}
+
+.padding-top-1{
+    padding-top: 1%;
+}
+
+section.main-content .layout-container{
+    top: -140px;
+}
+section.main-content .layout-container{
+    width: 100%;
+}
+section.main-content footer.md-two-twelfths img{
+    height: 70px;
+
+}
+section.main-content footer.md-two-twelfths{
+    /*width:19.66667%;*/
+
+}
+.login-register-div{
+    font-size: 11px;
+}
+section.main-content{
+    height: 1px;
+}
+.main-navigation .highlight-selected{
+    background: none;
+}
+.site-header.full-background{
+    min-height: 450px !important;
+    z-index: 1;
+    height: auto;
+}
+.hero .padded-top{
+    padding-top: 60px !important;
+}
+
+.homepage-main-bar .login-register-div{
+    width: 125px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.homepage-main-bar .login-register-div .text-divider {
+    height: 38px;
+    float: none;
+    margin: 0 10px 0px 10px;
+}
+.featured-rooms-slider-section .bx-viewport{
+    height: 420px !important;
+}
+
+.featured-rooms-slider-section .md-one-whole.sm-one-whole .last-child-div{
+    opacity: 0.5;
+}
+
+.featured-rooms-slider-section .md-one-whole.sm-one-whole .last-child-div img{
+    height: 420px;
+}
+
+.site-header .main-navigation{
+    width: 100%;
+}
+.site-header .main-navigation li a{
+    font-family: "Montserrat" !important;
+    font-size: 16px;
+    font-weight: normal;
+}
+.site-header .homepage-main-bar .icons-div .fa-lg{
+    margin-right: 3%;
+}
+.site-header .homepage-main-bar .icons-div{
+    width: 50%;
+}
+.site-header .brand-container {
+    margin-left: 3.1%;
+}
+.site-header .hero{
+    width: 100%;
+    float: left;
+}
+.site-header.full-background:before{
+    background-size: 100% 100%;
+}
+.hero .layout-centered{
+    float: left;
+    width: 100%;
+    clear: both;
+}
+
+.site-header .navbar-inverse {
+    width: 100%;
+    float: left;
+}
+
+#bs-example-navbar-collapse-1 .main-navigation .padding-top-by-7{
+    padding: 7px 21px !important;
+}
+@-moz-document url-prefix() {
+    .site-header.full-background .hero{
+        margin-top: 0px;
+    }
+}
+section.main-content footer.md-two-twelfths{
+    /*width: 24%;*/
+}
+
+.search-btn{
+    background: #39bdfb;
+    width: 100%;
+    min-width: 0;
+}
+
+.property-search fieldset .select-style,.property-search fieldset input{
+    border: none;
+}
+
+section.main-content .property-search form .text-divider{
+    border-right: 2px solid #bababa;
+    margin: 15px 0px;
+    height: 35px;
+    border-left: 1px solid #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.sm-one-third input::-webkit-input-placeholder{
+}
+
+form#search_filter .search-btn{
+    font-family: "Montserrat";
+}
+
+/****************** contact-us page css **********************/
+
+.contact-section{
+    padding-top: 100px;
+}
+
+.site-header.full-background.contact-us-main.height-0{
+    min-height: 0px !Important;
+}
+
+.contact-us {
+    width: 57%;
+    margin: 9% 20%;
+    padding-bottom: 0.5%;;
+    border-radius: 0.5em;
+    background: url('rounded_rectangle_contact_us.png');
+}
+
+
+
+.contact-form {
+    padding: 8% 10% 10% 10%;
+}
+
+.input-appear {
+    border-style: none none solid;
+    border-color: white;
+    background-color: transparent;
+    margin: 2%;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+.contact-header {
+    color: white;
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+.contact-header h2,
+.need-help h2 {
+    font-family: "Montserrat";
+    font-size: 11px;
+}
+
+.grand-hotel {
+    color: white;
+    font-family: "GRAND HOTEL";
+    font-size: 52px;
+}
+
+.need-help {
+    background-color: #fad939;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.call-now,
+.email-now {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    font-family: "Montserrat";
+}
+
+.call-now div:nth-child(2),
+.email-now div:nth-child(2) {
+    color: white;
+    font-size: 16px;
+    margin-top: 1em;
+}
+
+.call-now a, .email-now a, .we-are-here-text-color{
+    color: #404B50 !important;
+}
+
+.call-now div:last-child,
+.email-now div:last-child {
+    font-size: 23px;
+    margin-bottom: 1em;
+}
+
+.need-help h2 {
+    font-family: "Montserrat";
+    top: -2em;
+    position: relative;
+}
+
+.btn--blue {
+    height: 55px;
+    margin: auto;
+    display: inherit;
+    margin-top: 4em;
+    font-family: Montserrat;
+    font-size: 13px;
+}
+
+.bg-image {
+    background: url('contact_us_bg_image.png') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+input.input-appear::-webkit-input-placeholder {
+    color: white;
+    font-size: 14px;
+}
+
+textarea.input-appear::-webkit-input-placeholder {
+    color: white;
+}
+
+article.field a {
+    display: inherit;
+    margin: auto;
+    width: 25%;
+}
+
+/*.hero {*/
+    /*display: none;*/
+/*}*/
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-arrow-right:before {
+    content: "\f061";
+    font-size: 11.6px;
+}
+
+.fa-envelope-o:before {
+    content: "\f003";
+    font-size: 40px;
+    color: white;
+}
+
+.fa-phone:before {
+    content: "\f095";
+    font-size: 40px;
+    color: white;
+}
+
+.inner-addon {
+    position: relative;
+}
+
+/* style icon */
+.inner-addon .fa-calendar,.inner-addon .fa-bed, .inner-addon .fa-user {
+    position: absolute;
+    padding: 10px 8px 8px 0px;
+    pointer-events: none;
+    top: 24%;
+    color: #bababa;
+    font-size: 14.85px;
+}
+
+/* align icon */
+.left-addon .fa-user { left:  0px;}
+.right-addon .fa-calendar,.right-addon .fa-bed { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+
+.right-addon input {
+    padding: 20px;
+}
+
+.footer-bg .footer-menu-list .list-div-text a, .menu-list-div .list-div span a{
+    color: #ffffff;
+}
+
+.inner-addon .fa-user {
+    font-size: 20.42px;
+    padding: 6px 20px 10px 30px;
+}
+
+.site-header .hacienda-logo{
+    width: 100px;
+}
+
+.last-child-div{
+    padding-left: 10px;
+}
+
+.subscriber-button-main img{
+    cursor: pointer;
+}
+
+.main-content-sectio-devider-feature img{
+    margin: 0 40%;
+}
+
+.main-content-sectio-devider img{
+    margin: 0 46%;
+}
+
+.faq-search-help-main fieldset{
+    width: 71%;
+}
+
+.site-header .hero h1.bottom-border:after{
+    display: none;
+}
+
+.site-header.faq_page_content:before{
+    background: url("faq_header_bg.png") no-repeat;
+    /*background-size: 100%;*/
+    /*background-position-y: -499px;*/
+    /*opacity: 0.2;*/
+    background-size: cover;
+
+}
+
+.site-header.faq_page_content {
+    height: 100%;
+}
+
+.site-header.faq_page_content .heading-large.margin-top-by-5{
+    font-size: 39px;
+}
+
+.faq-search-help-main{
+    width: 46%;
+    clear: both;
+    padding-top: 12px;
+}
+
+.faq-search-help-main .property-search{
+    width: 100%;
+    padding: 0;
+}
+
+a.accordion-toggle{
+    text-decoration: none;
+    cursor: pointer;
+}
+.panel{
+    border: none !important;
+}
+.panel-default>.panel-heading{
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+.panel-collapse{
+    color: #bababa;
+}
+.chevron-up{
+
+}
+/*.panel-title {*/
+    /*background: url("up-arrow-faq.png") no-repeat right;*/
+/*}*/
+/*.collapsed .panel-title {*/
+    /*background: url("down-arrow-faq.png") no-repeat right;*/
+/*}*/
+
+.faq-page-content-section .section-divider {
+    background: #EDEBE1;
+}
+
+.form__actions {
+    margin-top: 5em;
+}
+
+.footer-menu-list span a{
+    color: white;
+}
+
+.padding-right-9{
+    padding-right: 9%;
+}
+
+.footer-img-logo{
+    float: left;
+    padding: 3% 5%;
+}
+
+.menu-list-div  .text-divider{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 0px;
+}
+
+.newsletter-subscribe-button{
+    background: image-url("subscribe-email-btn.png") no-repeat;
+    float: left;
+    height: 55px;
+    width: 160px;
+    text-indent: 267px;
+    border: none;
+}
+.newsletter-subscribe-form p.error{
+    float: left;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+}
+section.main-content.email-thank-you-section{
+    height: auto;
+}
+
+.height-0{
+    height: 0px !important;
+}
+
+.need-help-text-section{
+    text-align: center;
+    padding-top: 1%;
+}
+
+.contact-form .input-appear{
+    padding: 0px;
+    padding-left: .75em;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.contact-form .error{
+    padding-left: 12px;
+    font-family: "Montserrat";
+    color: white;
+}
+
+.contact-form  #emailId-error{
+    display: block !important;
+}
+
+.padding-top-15-px{
+    padding-top: 15px !important;
+}
+
+.z-index-1{
+    z-index: 1;
+}
+
+/*about us page css*/
+
+.about-us-slider .testimonial-comment{
+    padding: 0 15%;
+}
+
+.about-us-main .want-to-chat-container{
+    padding: 18px;
+}
+
+.about-us-main .btn--blue{
+    margin: 2em 0 0 0;
+}
+
+.font-family{
+    font-family: "Montserrat" !important;
+}
+
+.margin-bottom-6em{
+    margin-bottom: 6em;
+}
+
+.about-us-content{
+    padding: 0 60px;
+    color: #777777;
+}
+
+.about-us-content p{
+    font-size: 14px;
+}
+
+/*privacy policy css*/
+
+.privacy-policy-page-content .want-to-chat-container .fa-envelope-o:before, .privacy-policy-page-content .want-to-chat-container  .fa-phone:before{
+    color: #000;
+    font-size: 23.33px;
+}
+
+.about-our-facility{
+    float: left;
+    color:#bababa;
+    font-size: 11px;
+}
+
+.width-70{
+    width: 70%;
+}
+
+.font-bold{
+    font-weight: 600;
+}
+
+.about-us-content .about-our-facility p{
+    font-size: 11px;
+}
+
+/*maps page css*/
+
+.maps-main-section .need-help{
+    margin-top: 0;
+    float: left;
+    width: 100%
+}
+
+.site-header.maps_page_content:before{
+    background: url("map_bg_imgae.png") no-repeat;
+    background-size: cover;
+}
+
+.map-image{
+    float: left;
+    width: 100%;
+    background: #edebe1;
+}
+
+.map-image img{
+    width: 100%;
+}
+
+.center-div{
+    text-align: center;
+}
+
+.padding-top-10{
+    padding-top: 10%;
+}
+
+.padding-top-4{
+    padding-top: 4%;
+}
+
+.site-header.privacy_policy_content:before{
+    background: url("privacy_policy_bg_image.png") no-repeat;
+    background-size: cover;
+}
+
+.site-header.about_us_content:before{
+    background: url("about_us_bg_image.png") no-repeat;
+    background-size: cover;
+}
+
+.site-header.privacy_policy_content,.site-header.maps_page_content, .site-header.about_us_content {
+    height: 50%;
+}
+
+
+.about-us-slider-bg-image{
+    background: url("about_us_slider_bg_img.png") bottom center no-repeat;
+    background-size: cover;
+    padding: 0px;
+    color: white;
+    content: '';
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    width: 100%;
+}
+
+.about-us-slider-bg-image .bx-viewport{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+    margin: 0px;
+    border: none;
+    box-shadow: none;
+}
+
+.about-us-slider-bg-image .bx-wrapper{
+    margin: 0 auto;
+}
+
+.about-us-main section{
+    background-color: #f8f8f8;
+}
+
+.privacy-policy-page-content{
+    background-color: #f2f2f2
+}
+
+.about-our-facility h4{
+    color: black;
+}
+
+.width-95{
+    width: 95%;
+}
+
+.margin-left-3{
+    margin-left: 3%;
+}
+
+.site-header .home-text{
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Montserrat";
+}
+
+.site-header .page-breadcomb-text, .booking-form-section .page-breadcomb-text{
+    color: #fbd839;
+    font-size: 16px;
+    font-family: "Montserrat";
+}
+
+.facility_content .heading-large, .about_us_content .heading-large, .maps_page_content .heading-large, .privacy_policy_content .heading-large{
+    margin-top: 0px;
+    font-size: 34px !important;
+    font-family: "Montserrat";
+}
+
+.about-us-contact-form input, .about-us-contact-form textarea{
+    color:#c7c7c7;
+}
+
+.contact-form .input-appear:focus{
+    outline: none;
+}
+
+
+/*facilities css*/
+
+.site-header.facility_content:before{
+    background: url("facility_image_bg.png") no-repeat;
+    background-size: cover;
+}
+
+.site-header.facility_content{
+    height: 50%;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.white-background{
+    background-color: white;
+}
+
+.padding-left-bottom-2-px{
+    padding-right: 2px;
+    padding-bottom: 2px;
+}
+
+.our-facility-room-section{
+    margin: 0 17%;
+}
+
+.facilities-testimonial-text-color{
+    color: #777777;
+}
+
+.facilities-testimonial-bg-color{
+    background-color: white;
+}
+
+.facilities-testimonial-main-section .bx-wrapper .bx-viewport{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+.facilities-testimonial-main-section .testimonial-main-div{
+    background-color: white;
+}
+
+.about-our-facility-container .about-our-facility-desc{
+    color: #cacaca;
+    font-size: 12px;
+    padding-top: 3%;
+    font-weight: 600;
+}
+
+.facilities-page-content-section{
+    font-family: "Montserrat" !important;
+}
+
+.facilities-page-content-section .feature-section-column-main{
+    color: #cacaca;
+}
+
+.padding-left-0-px{
+    padding-left: 0px;
+}
+
+.facilities-page-content-section .fa-envelope-o:before, .facilities-page-content-section .fa-phone:before{
+    color: #000;
+    font-size: 23.33px;
+}
+
+.brand-container a:hover, .footer-img-logo a:hover{
+    opacity: 1;
+}
+
+.font-color-black{
+    color:#000;
+}
+
+.font-color-white{
+    color:#fff;
+}
+.search-btn:hover{
+    color: #ffffff;
+    opacity: 1;
+}
+
+.homepage-header-content .hero .padded-top{
+    padding-top: 62px !important;
+}
+.footer-menu-icon-div .fa,.site-header .homepage-main-bar .icons-div .fa{
+    color: #ffffff;
+}
+
+.wr-title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/*----------------------homepage header--------------------------*/
+
+.feature-atrraction-sliders .bx-viewport{
+    height: 283px !important;
+}
+
+@media screen and (max-width: 604px) and (min-width: 200px) {
+    .md-five-twelfths.sm-five-twelfths.lg-five-twelfths.float-left{
+        width: 100%;
+    }
+}
+
+
+.main-content.z-index-1{
+    float: left;
+    width: 100%;
+}
+
+@media screen and (max-width: 855px) and (min-width: 200px){
+    .section-divider{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-heading-div{
+        text-align: center;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .md-one-whole.sm-one-whole.call-now-bg{
+        padding: 2.5% 15%;
+    }
+}
+
+@media screen and (max-width: 855px) and (min-width: 200px) {
+    .site-header .navbar .center-heading{
+        border-color: transparent;
+        box-shadow: none;
+    }
+    .main-content-sectio-devider-feature img{
+        margin: 0 auto;
+    }
+    .phone-number-text{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .site-header.full-background{
+        min-height: 620px !important;
+    }
+    section.main-content .layout-container {
+        top: -404px !important;
+    }
+}
+
+@media screen and (max-width: 855px) and (min-width: 768px) {
+    .site-header .navbar .brand-container{
+        position: relative;
+        float: left;
+    }
+
+    .site-header .navbar .center-heading{
+        width: calc(100% - 130px);
+        position: relative;
+        float: left;
+        margin: 0;
+        padding-left: 4%;
+    }
+    .right-addon input{
+        padding-right: 20px;
+    }
+    .inner-addon .fa-calendar, .inner-addon .fa-bed, .inner-addon .fa-user{
+        padding: 10px 10px 10px 0px;
+        font-size: 10.85px;
+    }
+    form .select-style select{
+        text-indent: 25px;
+    }
+    form .select-style #select-drop{
+        padding-top: 2.7em;
+        padding-bottom: 2.6em;
+        font-size: 8.6px;
+    }
+    #guests{
+        padding-top: 2.8em;
+        padding-bottom: 2.5em;
+        font-size: 8.6px;
+    }
+
+}
+
+
+@media screen and (max-width: 959px) and (min-width: 850px) {
+    section.main-content .layout-container {
+        top: -80px;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 1046px) {
+    section.main-content .layout-container {
+        top: -80px;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 850px) {
+    .right-addon input{
+        padding-right: 20px;
+    }
+    .inner-addon .fa-calendar, .inner-addon .fa-bed, .inner-addon .fa-user{
+        padding: 10px 10px 10px 0px;
+        font-size: 10.85px;
+    }
+    .property-search fieldset:nth-of-type(4) .select-style {
+        width: 100% !important;
+    }
+    form .select-style #select-drop{
+        padding-top: 2.7em;
+        padding-bottom: 2.8em;
+        font-size: 8.6px;
+    }
+    #guests{
+        padding-top: 2.8em;
+        padding-bottom: 2.5em;
+        font-size: 8.6px;
+    }
+    .main-content-sectio-devider-feature img{
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 960px) and (min-width: 855px) {
+    .site-header .navbar .brand-container{
+        position: relative;
+        float: left;
+    }
+
+    .site-header .navbar .center-heading{
+        width: calc(100% - 130px);
+        position: relative;
+        float: left;
+        margin: 0;
+        padding-left: 4%;
+    }
+
+}
+
+@media screen and (max-width: 1045px) and (min-width: 960px) {
+    .site-header .navbar .brand-container{
+        position: relative;
+        float: left;
+    }
+
+    .site-header .navbar .center-heading{
+        width: calc(100% - 130px);
+        position: relative;
+        float: left;
+        margin: 0;
+        padding-left: 4%;
+    }
+
+}
+
+@media screen and (max-width: 1045px) and (min-width: 1014px) {
+    .site-header .navbar .brand-container{
+        position: relative;
+        float: left;
+    }
+
+    .site-header .navbar .center-heading{
+        width: calc(100% - 170px);
+        position: relative;
+        float: left;
+        margin: 0;
+        padding-left: 4%;
+    }
+
+}
+
+@media screen and (min-width: 1045px) {
+    .site-header .navbar .brand-container{
+        position: relative;
+        float: left;
+    }
+
+    .site-header .navbar .center-heading{
+        width: calc(100% - 170px);
+        position: relative;
+        float: left;
+        margin: 0;
+        padding-left: 15%;
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 681px) {
+    .property-search fieldset:nth-of-type(4) .select-style{
+        width: 100% !important;
+    }
+
+}
+
+/*------booking form-------*/
+
+.booking-receipt-details .flex-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.booking-receipt-details .select-block{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+.flex-block #YEAR, .flex-block #MONTH{
+    width: 100%;
+    margin-right: 10px;
+}
+
+.check-policy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.check-policy p, input#accept_policy{
+    margin: 0;
+}
+
+.booking_form #payment_type, .booking_form #YEAR, .booking_form #MONTH{
+    background: #FFFFFF;
+    outline: none;
+}
+
+.booking_form .card_type_block{
+    padding-top: 5px;
+}
+
+.receipt-payment-section{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 15px !important;
+}
+
+.receipt-booking-details-section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.receipt-booking-details-section .room-details-block{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+}
+
+.receipt-booking-details-section .map-link a, a:focus, a:hover{
+    color: #39BDFB;
+}
+
+.hotel-stay-duration{
+    padding: 20px 0 20px 0;
+}
+
+.receipt-payment-section .panel-heading{
+    padding: 10px 0 10px 0;
+}
+
+.receipt-payment-section .panel-body{
+    padding: 0;
+}
+
+.table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th{
+    padding: 7px 15px 7px 0;
+}
+
+.receipt-payment-section .th-price{
+    padding: 25px 0 0 0 !important;
+}
+
+.receipt-payment-section .td-price{
+    padding: 15px 15px 0 0 !important;
+}
+
+.margin-top-10{
+    margin-top: 10px;
+}
+
+form.booking_form > div {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+form.booking_form .rental-polciy-text{
+    float: left;
+    position: relative;
+    width: 90%;
+}
+
+form.booking_form .help-block {
+    color: red !important;
+    font-size: 1.5vmin;
+    margin: 0 !important;
+}
+
+form.booking_form .form-group{
+    margin: 0 !important;
+}
+
+.div-request-booking{
+    text-align: center;
+}
+
+/*---------------------room details-------------------------*/
+
+
+.padd-zero{
+    padding: 0 !important;
+}
+
+.layout-container .feature-section-column-main{
+    width: 200px;
+    padding: 5px 0 5px 0;
+}
+
+.layout-container .room-details-feature-section-main{
+    padding-bottom: 20px;
+}
+
+.layout-container .fa-stack-1x.room-number{
+    font-size: 11.6px;
+    margin-top: 15px;
+}
+
+.layout-container .room-image-gallery{
+    display: block;
+    width: 100%;
+}
+
+.layout-container .room-image-gallery .property-img{
+    width: 33.33%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.layout-container .room-image-gallery img{
+    height: 300px !important;
+}
+
+.layout-container .receipt-booking-details-section .room-image img{
+    width: 100%;
+    max-width: 100%;
+    height: 100px;
+}
+
+.layout-container .receipt-booking-details-section .room-image{
+    width: 33.33%;
+    margin: 0 !important;
+    padding: 0 10px 0 0 !important;
+}
+
+.room-details-page-content-section .btn-div{
+    padding: 0;
+    width: 19%;
+}
+.room-details-page-content-section .room-book-now{
+    background: #39BDFB;
+    border: none;
+    color: #ffffff;
+    height: 58px;
+    width: 100% !important;
+    text-transform: uppercase;
+}
+
+#datepicker-modal .modal-footer {
+    border: none;
+    padding-top: 0;
+}
+
+#datepicker-modal .modal-body, #datepicker-modal .modal-header{
+    padding-bottom: 0;
+}
+
+#datepicker-modal .modal-header{
+    border: none;
+}
+
+@media screen and (max-width: 1110px) and (min-width: 991px){
+    #hotellist_view .book-now{
+        font-size: 2vmin;
+    }
+}
+
+@media screen and (max-width: 760px) and (min-width: 480px){
+    #hotellist_view .hotel-rating-review > .common-font-10,
+    #hotellist_view .hotel-rating-review .col-sm-6 > .common-font-10,
+    #hotellist_view .description-text{
+        font-size: 1.5vmin;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #hotellist_view .hotel-rating-review > .common-font-10,
+    #hotellist_view .hotel-rating-review .col-sm-6 > .common-font-10,
+    #hotellist_view .description-text{
+        font-size: 2vmin;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    #hotelgrid_view .col-md-4.hotel-grid-result-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    #hotellist_view .book-now{
+        font-size: 1.5vmin;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hotel-listing-layout-container .hotel-list-sort-buttons{
+        font-size: 2vmin;
+    }
+}
+
+/*--------------thank you---------------*/
+
+.thank-you{
+    flex-direction: column !important;
+}
+
+.thank-you .room-img{
+    width: 33.33%;
+    margin: 0 0 15px 0 !important;
+    padding: 0 10px 0 0 !important;
+}
+
+.receipt-thank-you .panel-heading, .receipt-thank-you .panel-body{
+    padding: 0;
+    margin: 0;
+}
+
+.receipt-thank-you .total-price-number{
+    padding-right: 15px !important;
+}

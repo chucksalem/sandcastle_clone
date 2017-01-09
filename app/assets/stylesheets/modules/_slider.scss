@@ -1,0 +1,30 @@
+.featured-rooms-slider-section {
+  .slider-image {
+    position: relative;
+  }
+
+  .room-icon-layer {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .3);
+    bottom: 0px;
+    width: 588px;
+    height: 80px;
+  }
+
+  .room-amenity {
+    text-align: right;
+  }
+
+  .room-bath, .room-bed, .room-users, .room-building {
+    display: inline-block;
+    margin: 10px 20px 0px 0px;
+    width: 70px;
+    text-align: center;
+    // height: 100px;
+    // vertical-align: middle;
+    .text {
+      color: white;
+      text-align: center;
+    }
+  }
+}

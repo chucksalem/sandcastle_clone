@@ -1,0 +1,6 @@
+= form_for :subscribe, url: subscribe_accommodations_path, html: { class: 'newsletter-subscribe-form' } do |f|
+  = f.text_field :email, placeholder: 'YOUR EMAIL ADDRESS', class: 'email email-address-text-box'
+  .subscriber-button-main
+    = f.submit '', class: 'newsletter-subscribe-button'
+  p.error.invalid-email Please enter a valid email address.
+

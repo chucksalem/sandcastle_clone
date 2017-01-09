@@ -1,0 +1,178 @@
+/*responsive css for maps page*/
+
+@media screen and (max-width: 1024px) and (min-width: 681px) {
+    .call-now a, .email-now a{
+        font-size: 18px;
+    }
+
+    .call-now-text, .email-now-text{
+        font-size: 14px !important;
+    }
+
+    .call-now, .email-now{
+        width: 44%;
+    }
+
+    .about-us-content{
+        padding: 0 20px !important;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 765px) {
+    .about-us-main .want-to-chat-container {
+        margin-left: 30px;
+    }
+
+    .want-to-chat-container {
+        width: 28% !important;
+        float: right;
+    }
+
+    .width-for-first-about-content{
+        width: 67%;
+    }
+
+    .facilities-page-content-section .want-to-chat-container{
+        width: 30% !important;
+        float: right;
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 764px) and (min-width: 681px) {
+    .facilities-page-content-section .want-to-chat-container, .about-us-main .want-to-chat-container {
+        margin-left: 30px;
+    }
+
+    .privacy-policy-page-content  .want-to-chat-container {
+        width: 32% !important;
+        float: right;
+    }
+
+    .facilities-page-content-section .want-to-chat-container{
+        margin-left: 0;
+        width: 100% !important;
+    }
+
+    .width-for-first-about-content{
+        width: 65%;
+    }
+}
+
+
+@media screen and (max-width: 680px) and (min-width: 200px) {
+    .call-now a, .email-now a{
+        font-size: 16px;
+    }
+
+    .call-now-text, .email-now-text{
+        font-size: 12px !important;
+    }
+
+    .call-now, .email-now{
+        width: 100%;
+    }
+
+    .about-us-content{
+        padding: 0 20px !important;
+    }
+
+    .privacy-policy-page-content .about-our-facility{
+        width:100%;
+    }
+
+    .facilities-page-content-section .want-to-chat-container, .privacy-policy-page-content .want-to-chat-container{
+        margin-left: 0px;
+    }
+}
+
+
+/*header responsive css*/
+
+@media screen and (max-width: 1045px) and (min-width: 960px) {
+
+    .welcome-text-align-for-smaller{
+        padding-top: 114px;
+    }
+
+    .site-header .container > .navbar-collapse{
+    }
+}
+
+/*footer responsive css*/
+
+@media screen and (max-width: 1025px) and (min-width: 960px) {
+    .footer-img-logo{
+        padding: 4% 3%;
+    }
+
+    .menu-list-div{
+        padding: 8% 0 0 0;
+        width: 77%;
+    }
+
+    .list-div{
+        padding: 0 0 0 12%;
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 960px) and (min-width: 200px) {
+    .subscribe-email-div{
+        padding: 7% 0 0 2% !important;
+    }
+
+    .footer-bg .list-div{
+        margin : 0;
+    }
+
+    .footer-bg .footer-menu-list{
+        padding: 1% 0 0 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bg{
+        background-size: cover !important;
+    }
+
+    .footer-main-div{
+        height: 245px;
+    }
+
+    .footer-img-logo{
+        padding: 2% 0;
+    }
+
+    .footer-bg .footer-main-div{
+        padding: 0 4%;
+    }
+
+    .footer-bg .menu-list-div{
+        text-align: center;
+    }
+
+    .footer-bg .list-div-text{
+        padding: 0;
+    }
+
+    .footer-bg .menu-list-div .text-divider{
+         padding-right: 0;
+         border-left: 0;
+         margin-left: 0;
+        height: 32px;
+         margin-right: 0;
+    }
+
+    .padding-in-footer{
+        padding-right: 3% !important;
+    }
+
+    .footer-bg .menu-list-div .list-div .float-left, .footer-bg  .footer-menu-list .float-left{
+        float: none;
+    }
+}

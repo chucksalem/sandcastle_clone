@@ -1,4 +1,5 @@
 @import
+    "font-awesome",
     "base/_colors",
     "base/_icon-mixin",
     "base/_scallop-mixin",
@@ -29,11 +30,12 @@
     "layout/_grid",
     "layout/_tile",
     "layout/_widths",
-    "modules/_site-header",
+    "modules/_site-header.scss",
     "modules/_image-grouping",
     "modules/_property-details",
     "modules/_request-booking",
     "modules/_pikaday",
+    "modules/_slider",
     "modules/_offerings",
     "modules/_pagination",
     "modules/_contact-map",
@@ -42,8 +44,10 @@
     "modules/_property-search",
     "modules/_testimonials",
     "modules/_related-places",
-    "modules/_site-footer",
+    "modules/_search-form",
     "modules/_subnavigation",
     "modules/_featured-properties",
     "modules/_faq",
-    "vendor/jquery.fancybox";
+    "modules/footer",
+    "vendor/jquery.fancybox",
+    "modules/_common";

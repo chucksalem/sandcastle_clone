@@ -1,0 +1,17 @@
+form#search_filter.search-form data-toggle="validator" action="#{accommodations_path}" method="get"
+  .form-input.location-select
+    / i.fa.fa-bed aria-hidden="true"
+    select name="rooms" required=""
+      = options_for_select(areas, @area)
+  .form-input.date-input
+    input#start_date.datepicker.arrival-date autocomplete="off" name="start_date" placeholder=("CHECK IN") readonly="readonly" type="text" required="" /
+    / i.fa.fa-calendar aria-hidden="true"
+  .form-input.date-input
+    input#end_date.datepicker.depart-date autocomplete="off" name="end_date" placeholder=("CHECK OUT") readonly="readonly" type="text" required="" /
+    / i.fa.fa-calendar aria-hidden="true"
+  .form-input.guests-select
+    / i.fa.fa-user aria-hidden="true"
+    select.guests-select name="guests"
+      = options_for_select(guests)
+  .form-input.submit
+    button.btn.search-btn.sandcastle-text-capitalization type="submit" Search

@@ -10,4 +10,16 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require global
+//= require jquery
+//= require jquery-ui
+//= require jquery.validate
+//= require modernizr-ra
+//= require bootstrap
+//= require moment
+//= require bxSlider
+//= require fancybox/source/jquery.fancybox.pack
+//= require fancybox/source/helpers/jquery.fancybox-media
+//= require pikaday
+//= require isotope.pkgd.min
+//= require jquery.maskedinput
+//= require base
