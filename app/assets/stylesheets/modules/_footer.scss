@@ -37,6 +37,8 @@
 
       @include bp-between($breakpoint__xs, $breakpoint__lg){
         display: block;
+        height: auto;
+        margin: 10px 0px;
       }
     }
 
@@ -70,6 +72,14 @@
     text-align: center;
     span {
       padding-left: 10px;
+    }
+
+    @include bp-until($breakpoint__md) {
+      span {
+        display: block;
+        padding-left: 0px;
+        margin: 10px 0px;
+      }
     }
   }
 }

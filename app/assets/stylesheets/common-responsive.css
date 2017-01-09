@@ -128,14 +128,6 @@
         margin : 0;
     }
 
-    .footer-bg .footer-menu-list{
-        padding: 1% 0 0 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .footer-bg{
         background-size: cover !important;
     }
